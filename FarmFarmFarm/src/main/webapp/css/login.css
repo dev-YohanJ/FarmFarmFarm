@@ -1,0 +1,79 @@
+@charset "EUC-KR";
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box}
+
+input{border-radius:3px;border:1px solid lightgray}
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+}
+
+
+input[type=text]:focus, input[type=password]:focus {
+    box-shadow: 0 0 0 0.2rem rgba(0,123,255,.25);
+    outline: none;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer; /* 손가락 커서 모양 */
+    width: 100%;
+    opacity: 0.9;
+}
+button:nth-child(1){border-radius:3px 0 0 3px}
+button:nth-child(2){border-radius:0 3px 3px 0px}
+button:hover {
+    opacity:1;
+    
+}
+button:focus{
+   outline:none;
+}
+
+/* 취소 버튼*/
+.join{
+    padding: 14px 20px;
+    background-color: #f44336;
+}
+
+.join, .submitbtn {
+  height:45px;
+  float: left;
+  width: 50%;
+}
+a{color:white;text-decoration:none;}
+
+form {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid lightgray;
+    width: 500px; /* Could be more or less, depending on screen size */
+    padding: 16px;
+}
+
+hr {
+    border: 1px solid #f1f1f1;
+    margin-bottom: 25px;
+}
+ 
+ h1{text-align:center}
+
+/* Clear floats */
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table; 
+}
+span{vertical-align: top}
+
+@media screen and (max-width: 300px) {
+    .join, .signupbtn {
+       width: 100%;
+    }
+}
