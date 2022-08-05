@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Context>
+	<Resource 
+	 name="jdbc/OracleDB"
+	 auth="Container"
+	 type="javax.sql.DataSource"
+	 username="ADMIN"
+	 password="asdfASDF1234!@#$"
+	 driverClassName="oracle.jdbc.driver.OracleDriver"
+	 factory="org.apache.tomcat.dbcp.dbcp2.BasicDataSourceFactory"
+	 url="jdbc:oracle:thin:@DB20220615_high?TNS_ADMIN=/Users/yohan/Desktop/Workspace/Wallet_DB20220615"
+	 maxTotal="500"
+	 maxIdle="100" />
+</Context>
+<!-- 
+	JNDI에 설정해 놓았다는 것은 context.xml에 리소스를 생성해놓은 것을 말한다.
+	
+	1. name="jdbc/OracleDB"
+	   JNDI로 호출될 이름을 설정하는 곳으로 임의의 이름 설정 가능하다
+	   dbcpAPITest.jsp의 init.lookup("java:comp/env/jdbc/OracleDB");
+	   lookup 메서드로 여기서 설정한 이름을 찾는다.
+	   
+	2. auth="Container"
+		DBCP를 관리할 관리자(Container or Application)로 컨테이너인 톰캣이 관리한다
+	
+	3. type="javax.sql.DataSource"
+		1번 resource의 return type이 DataSource라는 의미이며
+		Connection 객체를 반환할 수 있습니다.
+		예) DataSource ds = (DataSource) init.lookup("java:comp/env/jdbc/OracleDB");
+		
+	4. username="ADMIN"
+	
+	5. password="asdfASDF1234!@#$"
+	
+	6. driverClassName="oracle.jdbc.driver.OracleDriver"
+		오라클 드라이버 이름(JDBC를 이용하기 위한 드라이버 클래스)
+		
+	7. factory="org.apache.tomcat.dbcp.dbcp2.BasicDataSourceFactory" (8버전 이상)
+		dbcp를 관리하는 클래스로 Factory 클래스를 이용하면 좀 더 안정적으로 관리할 수 있다
+		
+		factory="org.apache.tomcat.dbcp.dbcp.BasicDataSourceFactory" (7버전)
+		
+	8. url="jdbc:oracle:thin:@DB20220615_medium?TNS_ADMIN=/Users/yohan/Desktop/Workspace/Wallet_DB20220615"
+		DB의 접속 URL
+		
+	9. maxTotal="500" (최대 사용할 Connection 개수)
+	
+	10. maxIdle="100" (DB Pool에 여분으로 남겨질 최대 Connection 개수)
+ -->
