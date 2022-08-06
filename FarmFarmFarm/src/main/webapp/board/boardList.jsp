@@ -35,7 +35,7 @@
   <div class="row">
     <div class="col-sm-1 bg-light">
       <aside>
-        <jsp:include page = "left.jsp"/>
+        <jsp:include page = "board_left.jsp"/>
       </aside>
         </div>
         <div class="col-sm-11" style="margin-bottom:5rem">
