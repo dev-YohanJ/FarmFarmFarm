@@ -1,4 +1,4 @@
-package net.board.action;
+package net.admin.action;
 
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -14,7 +14,7 @@ import com.oreilly.servlet.multipart.DefaultFileRenamePolicy;
 import net.board.db.BoardBean;
 import net.board.db.BoardDAO;
 
-public class BoardModifyAction implements Action {
+public class MgrModifyAction implements Action {
 	public ActionForward execute(HttpServletRequest request, HttpServletResponse response) 
 			throws ServletException, IOException {
 		BoardDAO boarddao = new BoardDAO();

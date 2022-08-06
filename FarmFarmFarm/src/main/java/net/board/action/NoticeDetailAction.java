@@ -9,7 +9,7 @@ import javax.servlet.http.HttpServletResponse;
 import net.board.db.BoardBean;
 import net.board.db.BoardDAO;
 
-public class BoardDetailAction implements Action {
+public class NoticeDetailAction implements Action {
 	
 	public ActionForward execute(HttpServletRequest request, HttpServletResponse response) 
 			throws ServletException, IOException {

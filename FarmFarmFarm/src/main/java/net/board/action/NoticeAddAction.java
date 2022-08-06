@@ -13,7 +13,7 @@ import com.oreilly.servlet.multipart.DefaultFileRenamePolicy;
 import net.board.db.BoardBean;
 import net.board.db.BoardDAO;
 
-public class BoardAddAction implements Action {
+public class NoticeAddAction implements Action {
 	public ActionForward execute(HttpServletRequest request, HttpServletResponse response) 
 			throws ServletException, IOException {
 		

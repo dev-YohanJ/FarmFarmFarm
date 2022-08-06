@@ -1,4 +1,4 @@
-package net.board.action;
+package net.admin.action;
 
 import java.io.IOException;
 import java.util.*;
@@ -12,7 +12,7 @@ import com.google.gson.*;
 import net.board.db.BoardBean;
 import net.board.db.BoardDAO;
 
-public class BoardListAction implements Action {
+public class MgrListAction implements Action {
 	
 	public ActionForward execute(HttpServletRequest request, HttpServletResponse response) 
 			throws ServletException, IOException {

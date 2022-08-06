@@ -11,9 +11,6 @@
 		margin-bottom: 2em;
 		display:inline-block;
 	}
-	a:hover { color:black; text-decoration: none; }
-	a:active {color:black;text-decoration: none;}
-	
 	
 	.rows{
 		text-align: right;
@@ -45,12 +42,12 @@
   <div class="row">
     <div class="col-sm-1 bg-light">
       <aside>
-        <jsp:include page = "left.jsp"/>
+        <jsp:include page = "admin_left.jsp"/>
       </aside>
         </div>
         
         <div class="col-sm-10" style="margin-bottom:5rem">
-        <h3 style="text-align:center">상품관리</h3>
+        <h3 style="text-align:center">공지사항</h3>
       <section>
         <table class="table" style="border-bottom:1px solid black">
           <thead id="title">
@@ -60,37 +57,47 @@
 	 		</tr>
 			<tr>
 	   		  <th><div>번호</div></th>
-	   		  <th><div>사진</div></th>
-	   		  <th><div>이름</div></th>
+	   		  <th><div>제목</div></th>
 	   		  <th><div>날짜</div></th>
+	   		  <th><div>조회수</div></th>   		  
 	   		  <th><div>수정/삭제</div></th>
 			</tr>
 		  </thead>
 		  <tbody>
 		    <tr>
 		      <td>&nbsp;&nbsp;1</td>
-		      <td><img src="../image/fruits/grape3.jpg" width="100" height="50"></a></td>
-		      <td>포도</td>
+		      <td>환영합니다.</td>
 		      <td>2022-08-04</td>
+		      <td>17423</td>		      
 		      <td>
-		      	<a href="goodsUpdate.net?id=${m.id}">수정</a>/
-		      	<a href="goodsDelete.net?id=${m.id}">삭제</a>
+		      	<a href="noticeUpdate.mgr?id=${m.id}">수정</a>/
+		      	<a href="noticeDelete.mgr?id=${m.id}">삭제</a>
 		      </td>
 		    </tr>
 		    <tr>
 		      <td>&nbsp;&nbsp;2</td>
-		      <td><img src="../image/fruits/peach3.jpg" width="100" height="50"></a></td>
-		      <td>복숭아</td>
+		      <td>배송 안내입니다.</td>
 		      <td>2022-08-04</td>
+		      <td>13123</td>		      
 		      <td>
-		      	<a href="goodsUpdate.net?id=${m.id}">수정</a>/
-		      	<a href="goodsDelete.net?id=${m.id}">삭제</a>
+		      	<a href="noticeUpdate.mgr?id=${m.id}">수정</a>/
+		      	<a href="noticeDelete.mgr?id=${m.id}">삭제</a>
 		      </td>
 		    </tr>
-		  
+		    <tr>
+		      <td>&nbsp;&nbsp;3</td>
+		      <td>휴가 안내입니다.</td>
+		      <td>2022-08-06</td>
+		      <td>14412</td>		      
+		      <td>
+		      	<a href="noticeUpdate.mgr?id=${m.id}">수정</a>/
+		      	<a href="noticeDelete.mgr?id=${m.id}">삭제</a>
+		      </td>
+		    </tr>
+		    
   		  </tbody>
  </table>
- <button type="button" class="btn btn-info float-right">등록하기</button>
+ <button type="button" class="btn btn-info float-right" onclick="location.href='admin_noticeWrite.jsp'">등록하기</button>
     			</section>
     		</div>
     	</div>

@@ -1,6 +1,6 @@
-package net.board.db;
+package net.admin.db;
 
-public class BoardBean {
+public class MgrBean {
 	private int	   board_num;
 	private String board_name;
 	private String board_pass;

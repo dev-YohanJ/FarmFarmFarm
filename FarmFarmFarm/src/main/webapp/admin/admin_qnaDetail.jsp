@@ -11,9 +11,6 @@
 		margin-bottom: 2em;
 		display:inline-block;
 	}
-	a:hover { color:black; text-decoration: none; }
-	a:active {color:black;text-decoration: none;}
-	
 	
 	.rows{
 		text-align: right;
@@ -45,7 +42,7 @@
   <div class="row">
     <div class="col-sm-1 bg-light">
       <aside>
-        <jsp:include page = "board_left.jsp"/>
+        <jsp:include page = "admin_left.jsp"/>
       </aside>
         </div>
         
@@ -59,66 +56,21 @@
 			  <input type="search"> </th>
 	 		</tr>
 			<tr>
-	   		  <th><div>번호</div></th>
-	   		  <th><div>제목</div></th>
-	   		  <th><div>작성자</div></th>
-	   		  <th><div>날짜</div></th>
-	   		  <th><div>수정/삭제</div></th>
+	   		  <th><div>제목 : 하이하이</div></th>
 			</tr>
 		  </thead>
 		  <tbody>
 		    <tr>
-		      <td>&nbsp;&nbsp;1</td>
-		      <td><a href="board_qna2.jsp">하이하이</a></td>
-		      <td>하이하이</td>
-		      <td>2022-08-04</td>
-		      <td>
-		      	<a href="memberUpdate.net?id=${m.id}">수정</a>/
-		      	<a href="memberDelete.net?id=${m.id}">삭제</a>
-		      </td>
+		      <td>테스트 페이지입니다</td>
 		    </tr>
-		    <tr>
-		      <td>&nbsp;&nbsp;2</td>
-		      <td>왜 배송 안와요?</td>
-		      <td>ez</td>
-		      <td>2022-08-04</td>
-		      <td>
-		      	<a href="memberUpdate.net?id=${m.id}">수정</a>/
-		      	<a href="memberDelete.net?id=${m.id}">삭제</a>
-		      </td>
-		    </tr>
-		    <tr>
-		      <td>&nbsp;&nbsp;3</td>
-		      <td>질문입니다.?</td>
-		      <td>mj</td>
-		      <td>2022-08-04</td>
-		      <td>
-		      	<a href="memberUpdate.net?id=${m.id}">수정</a>/
-		      	<a href="memberDelete.net?id=${m.id}">삭제</a>
-		      </td>
-		    </tr>
-		    <tr>
-		      <td>&nbsp;&nbsp;4</td>
-		      <td>환불질문입니다</td>
-		      <td>qeqe</td>
-		      <td>2022-08-05</td>
-		      <td>
-		      	<a href="memberUpdate.net?id=${m.id}">수정</a>/
-		      	<a href="memberDelete.net?id=${m.id}">삭제</a>
-		      </td>
-		    </tr><tr>
-		      <td>&nbsp;&nbsp;5</td>
-		      <td>반갑습니다?</td>
-		      <td>asdjqr132</td>
-		      <td>2022-08-06</td>
-		      <td>
-		      	<a href="memberUpdate.net?id=${m.id}">수정</a>/
-		      	<a href="memberDelete.net?id=${m.id}">삭제</a>
-		      </td>
-		    </tr>
+		    
   		  </tbody>
+  		 
  </table>
- <button type="button" class="btn btn-info float-right" onclick="location.href='board_qnaWrite.jsp'">문의하기</button>
+   <div class="form-group" style="text-align: center">
+  	<button type="button" class="btn btn-warning">목록</button>
+  	<button type="button" class="btn btn-success" onclick="location.href='admin_qnaAnswer.jsp'">답변</button>
+  </div>
     			</section>
     		</div>
     	</div>

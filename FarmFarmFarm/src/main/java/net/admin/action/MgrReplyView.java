@@ -1,4 +1,4 @@
-package net.board.action;
+package net.admin.action;
 
 import java.io.IOException;
 
@@ -9,7 +9,7 @@ import javax.servlet.http.HttpServletResponse;
 import net.board.db.BoardBean;
 import net.board.db.BoardDAO;
 
-public class BoardReplyView implements Action  {
+public class MgrReplyView implements Action  {
 	public ActionForward execute(HttpServletRequest request, HttpServletResponse response) 
 			throws ServletException, IOException {
 		ActionForward forward = new ActionForward();

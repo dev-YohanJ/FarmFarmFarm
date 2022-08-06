@@ -1,4 +1,4 @@
-package net.board.action;
+package net.admin.action;
 
 import java.io.IOException;
 
@@ -10,7 +10,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 @WebServlet("*.bo")
-public class BoardFrontController extends HttpServlet {
+public class MgrFrontController extends HttpServlet {
 	
 	private static final long serialVersionUID = 1L;
 	

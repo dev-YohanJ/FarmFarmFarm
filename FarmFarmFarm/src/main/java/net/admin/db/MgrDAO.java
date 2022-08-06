@@ -1,4 +1,4 @@
-package net.board.db;
+package net.admin.db;
 
 import java.sql.*;
 import java.util.*;
@@ -6,10 +6,10 @@ import javax.naming.Context;
 import javax.naming.InitialContext;
 import javax.sql.DataSource;
 
-public class BoardDAO {
+public class MgrDAO {
 	private DataSource ds;
 	
-	public BoardDAO() {
+	public MgrDAO() {
 		try {
 			Context init = new InitialContext();
 			ds = (DataSource) init.lookup("java:comp/env/jdbc/OracleDB");

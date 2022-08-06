@@ -23,11 +23,10 @@
 		color: gray
 	}
 	
-	body > div > table > thead > tr:nth-child(2) > th:nth-child(1){width: 8%;}
+	body > div > table > thead > tr:nth-child(2) > th:nth-child(1){width: 15%;}
 	body > div > table > thead > tr:nth-child(2) > th:nth-child(2){width: 50%;}
-	body > div > table > thead > tr:nth-child(2) > th:nth-child(3){width: 14%;}
-	body > div > table > thead > tr:nth-child(2) > th:nth-child(4){width: 17%;}
-	body > div > table > thead > tr:nth-child(2) > th:nth-child(5){width: 11%;}
+	body > div > table > thead > tr:nth-child(2) > th:nth-child(3){width: 20%;}
+	body > div > table > thead > tr:nth-child(2) > th:nth-child(4){width: 15%;}
 </style>
 <script src="js/list.js"></script>
 <meta charset="UTF-8">
@@ -45,7 +44,7 @@
   <div class="row">
     <div class="col-sm-1 bg-light">
       <aside>
-        <jsp:include page = "board_left.jsp"/>
+        <jsp:include page = "admin_left.jsp"/>
       </aside>
         </div>
         
@@ -55,7 +54,7 @@
         <table class="table" style="border-bottom:1px solid black">
           <thead id="title">
             <tr>
-			  <th colspan="5" style="text-align:right">검색	
+			  <th colspan="4 " style="text-align:right">검색	
 			  <input type="search"> </th>
 	 		</tr>
 			<tr>
@@ -63,62 +62,40 @@
 	   		  <th><div>제목</div></th>
 	   		  <th><div>작성자</div></th>
 	   		  <th><div>날짜</div></th>
-	   		  <th><div>수정/삭제</div></th>
 			</tr>
 		  </thead>
 		  <tbody>
 		    <tr>
 		      <td>&nbsp;&nbsp;1</td>
-		      <td><a href="board_qna2.jsp">하이하이</a></td>
+		      <td><a href="admin_qnaDetail.jsp">하이하이</a></td>
 		      <td>하이하이</td>
 		      <td>2022-08-04</td>
-		      <td>
-		      	<a href="memberUpdate.net?id=${m.id}">수정</a>/
-		      	<a href="memberDelete.net?id=${m.id}">삭제</a>
-		      </td>
 		    </tr>
 		    <tr>
 		      <td>&nbsp;&nbsp;2</td>
 		      <td>왜 배송 안와요?</td>
 		      <td>ez</td>
 		      <td>2022-08-04</td>
-		      <td>
-		      	<a href="memberUpdate.net?id=${m.id}">수정</a>/
-		      	<a href="memberDelete.net?id=${m.id}">삭제</a>
-		      </td>
 		    </tr>
 		    <tr>
 		      <td>&nbsp;&nbsp;3</td>
 		      <td>질문입니다.?</td>
 		      <td>mj</td>
 		      <td>2022-08-04</td>
-		      <td>
-		      	<a href="memberUpdate.net?id=${m.id}">수정</a>/
-		      	<a href="memberDelete.net?id=${m.id}">삭제</a>
-		      </td>
 		    </tr>
 		    <tr>
 		      <td>&nbsp;&nbsp;4</td>
 		      <td>환불질문입니다</td>
 		      <td>qeqe</td>
 		      <td>2022-08-05</td>
-		      <td>
-		      	<a href="memberUpdate.net?id=${m.id}">수정</a>/
-		      	<a href="memberDelete.net?id=${m.id}">삭제</a>
-		      </td>
 		    </tr><tr>
 		      <td>&nbsp;&nbsp;5</td>
 		      <td>반갑습니다?</td>
 		      <td>asdjqr132</td>
 		      <td>2022-08-06</td>
-		      <td>
-		      	<a href="memberUpdate.net?id=${m.id}">수정</a>/
-		      	<a href="memberDelete.net?id=${m.id}">삭제</a>
-		      </td>
 		    </tr>
   		  </tbody>
  </table>
- <button type="button" class="btn btn-info float-right" onclick="location.href='board_qnaWrite.jsp'">문의하기</button>
     			</section>
     		</div>
     	</div>

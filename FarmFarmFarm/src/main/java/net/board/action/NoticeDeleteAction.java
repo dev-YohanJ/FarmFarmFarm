@@ -9,7 +9,7 @@ import javax.servlet.http.HttpServletResponse;
 
 import net.board.db.BoardDAO;
 
-public class BoardDeleteAction implements Action  {
+public class NoticeDeleteAction implements Action  {
 	public ActionForward execute(HttpServletRequest request, HttpServletResponse response) 
 			throws ServletException, IOException {
 		boolean result = false;
