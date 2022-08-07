@@ -1,12 +1,12 @@
-package net.board.action;
+package net.admin.action;
 
 import java.io.IOException;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import net.board.db.QnaBean;
-import net.board.db.QnaDAO;
+import net.admin.db.QnaBean;
+import net.admin.db.QnaDAO;
 
 public class QnaDetailAction  implements Action {
 	public ActionForward execute(HttpServletRequest request,
@@ -40,7 +40,7 @@ public class QnaDetailAction  implements Action {
 		
 		ActionForward forward = new ActionForward();
 		forward.setRedirect(false);
-		forward.setPath("board/qnaView.jsp"); //글 내용 보기 페이지로 이동하기 위해 경로를 설정합니다.
+		forward.setPath("admin/qnaView.jsp"); //글 내용 보기 페이지로 이동하기 위해 경로를 설정합니다.
 		return forward;
 	}
 }

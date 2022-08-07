@@ -1,4 +1,4 @@
-package net.board.action;
+package net.admin.action;
 
 import java.io.IOException;
 import java.util.ArrayList;

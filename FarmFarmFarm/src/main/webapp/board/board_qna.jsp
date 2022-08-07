@@ -73,8 +73,8 @@
 		      <td>하이하이</td>
 		      <td>2022-08-04</td>
 		      <td>
-		      	<a href="memberUpdate.net?id=${m.id}">수정</a>/
-		      	<a href="memberDelete.net?id=${m.id}">삭제</a>
+		      	<a href="boardUpdate.bo?id=${m.id}">수정</a>/
+		      	<a href="boardDelete.bo?id=${m.id}">삭제</a>
 		      </td>
 		    </tr>
 		    <tr>
@@ -83,8 +83,8 @@
 		      <td>ez</td>
 		      <td>2022-08-04</td>
 		      <td>
-		      	<a href="memberUpdate.net?id=${m.id}">수정</a>/
-		      	<a href="memberDelete.net?id=${m.id}">삭제</a>
+		      	<a href="boardUpdate.bo?id=${m.id}">수정</a>/
+		      	<a href="boardDelete.bo?id=${m.id}">삭제</a>
 		      </td>
 		    </tr>
 		    <tr>
@@ -93,8 +93,8 @@
 		      <td>mj</td>
 		      <td>2022-08-04</td>
 		      <td>
-		      	<a href="memberUpdate.net?id=${m.id}">수정</a>/
-		      	<a href="memberDelete.net?id=${m.id}">삭제</a>
+		      	<a href="boardUpdate.bo?id=${m.id}">수정</a>/
+		      	<a href="boardDelete.bo?id=${m.id}">삭제</a>
 		      </td>
 		    </tr>
 		    <tr>
@@ -103,8 +103,8 @@
 		      <td>qeqe</td>
 		      <td>2022-08-05</td>
 		      <td>
-		      	<a href="memberUpdate.net?id=${m.id}">수정</a>/
-		      	<a href="memberDelete.net?id=${m.id}">삭제</a>
+		      	<a href="boardUpdate.bo?id=${m.id}">수정</a>/
+		      	<a href="boardDelete.bo?id=${m.id}">삭제</a>
 		      </td>
 		    </tr><tr>
 		      <td>&nbsp;&nbsp;5</td>
@@ -112,8 +112,8 @@
 		      <td>asdjqr132</td>
 		      <td>2022-08-06</td>
 		      <td>
-		      	<a href="memberUpdate.net?id=${m.id}">수정</a>/
-		      	<a href="memberDelete.net?id=${m.id}">삭제</a>
+		      	<a href="boardUpdate.bo?id=${m.id}">수정</a>/
+		      	<a href="boardDelete.bo?id=${m.id}">삭제</a>
 		      </td>
 		    </tr>
   		  </tbody>

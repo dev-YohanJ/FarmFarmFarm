@@ -1,4 +1,4 @@
-package net.board.action;
+package net.admin.action;
 
 public class QnaFileDownAction {
 

@@ -1,4 +1,4 @@
-package net.board.action;
+package net.admin.action;
 
 import java.io.IOException;
 
@@ -6,32 +6,30 @@ import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import net.board.db.QnaBean;
-import net.board.db.QnaDAO;
+import net.admin.db.NoticeBean;
+import net.admin.db.NoticeDAO;
 
-
-
-public class QnaReplyAction implements Action {
+public class NoticeReplyAction implements Action {
 	public ActionForward execute(HttpServletRequest request,
 								 HttpServletResponse response)
 	throws ServletException, IOException {
 		ActionForward forward = new ActionForward();
-		QnaDAO qnadao  =new QnaDAO();
-		QnaBean qnadata=new QnaBean();
+		NoticeDAO noticedao=new NoticeDAO();
+		NoticeBean noticedata=new NoticeBean();
 		int result=0;
 		
-		//파라미터로 넘어온 값들을 Qnadata 객체에 저장합니다.
-	      qnadata.setQna_name(request.getParameter("qna_name"));
-	      qnadata.setQna_pass(request.getParameter("qna_pass"));
-	      qnadata.setQna_subject(request.getParameter("qna_subject"));
-	      qnadata.setQna_content(request.getParameter("qna_content"));
-	      qnadata.setQna_re_ref(Integer.parseInt(request.getParameter("qna_re_ref")));
-	      qnadata.setQna_re_lev(Integer.parseInt(request.getParameter("qna_re_lev")));
-	      qnadata.setQna_re_seq(Integer.parseInt(request.getParameter("qna_re_seq")));
+		//파라미터로 넘어온 값들을 noticedata 객체에 저장합니다.
+	      noticedata.setNotice_name(request.getParameter("notice_name"));
+	      noticedata.setNotice_pass(request.getParameter("notice_pass"));
+	      noticedata.setNotice_subject(request.getParameter("notice_subject"));
+	      noticedata.setNotice_content(request.getParameter("notice_content"));
+	      noticedata.setNotice_re_ref(Integer.parseInt(request.getParameter("notice_re_ref")));
+	      noticedata.setNotice_re_lev(Integer.parseInt(request.getParameter("notice_re_lev")));
+	      noticedata.setNotice_re_seq(Integer.parseInt(request.getParameter("notice_re_seq")));
 	      
-	      //답변을 DB에 저장하기 위해 Qnadata 객체를 파라미터로 전달하고
-	      //DAO의 메서드 QnaReply를 호출합니다.
-	      result=qnadao.qnaReply(qnadata);
+	      //답변을 DB에 저장하기 위해 noticedata 객체를 파라미터로 전달하고
+	      //DAO의 메서드 NoticeReply를 호출합니다.
+	      result=noticedao.noticeReply(noticedata);
 	      
 	      //답변 저장에 실패한 경우
 	      if(result==0){
@@ -57,7 +55,7 @@ public class QnaReplyAction implements Action {
 	      System.out.println("답장 저장 완료");   
 	      forward.setRedirect(true);
 	      //답변 글 내용을 확인하기 위해 글 내용 보기 페이지를 경로로 설정합니다.
-	      forward.setPath("QnaDetailAction.bo?num="+result);
+	      forward.setPath("NoticeDetailAction.ad?num="+result);
 	      return forward;
 	   }
 	}

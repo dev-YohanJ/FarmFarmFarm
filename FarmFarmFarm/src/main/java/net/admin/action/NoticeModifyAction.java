@@ -1,4 +1,4 @@
-package net.board.action;
+package net.admin.action;
 
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -84,7 +84,7 @@ public class NoticeModifyAction implements Action{
              
              forward.setRedirect(true);
              // 수정한 글 내용을 보여주기 위해 글 내용 보기 페이지로 이동하기위해 경로를 설정합니다.
-             forward.setPath("NoticeDetailAction.bo?num=" + noticedata.getNotice_num());
+             forward.setPath("NoticeDetailAction.ad?num=" + noticedata.getNotice_num());
              return forward;
 		} catch (IOException e) {
 			e.printStackTrace();

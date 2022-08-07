@@ -1,4 +1,4 @@
-package net.board.action;
+package net.admin.action;
 
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -52,7 +52,7 @@ public class NoticeDeleteAction implements Action {
 	     PrintWriter out = response.getWriter();
 	     out.println("<script>");
 	     out.println("alert('삭제 되었습니다.');");
-	     out.println("location.href='NoticeList.bo';");
+	     out.println("location.href='NoticeList.mgr';");
 	     out.println("</script>");
 	     out.close();
 	     return null;

@@ -1,5 +1,5 @@
 //글 등록에 대한 Action 클래스
-package net.board.action;
+package net.admin.action;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -12,8 +12,8 @@ import javax.servlet.ServletException;
 import com.oreilly.servlet.MultipartRequest;
 import com.oreilly.servlet.multipart.DefaultFileRenamePolicy;
 
-import net.board.db.QnaBean;
-import net.board.db.QnaDAO;
+import net.admin.db.QnaBean;
+import net.admin.db.QnaDAO;
 
 public class QnaAddAction implements Action {
 	public ActionForward execute(HttpServletRequest request, 
@@ -68,7 +68,7 @@ public class QnaAddAction implements Action {
 	         //글 등록이 완료되면 글 목록을 보여주기 위해 "QnaList.net"로 이동합니다.
 	         //Redirect여부를 true로 설정합니다.
 	         forward.setRedirect(true);
-	         forward.setPath("QnaList.net");//이동할 경로를 지정합니다.
+	         forward.setPath("QnaList.mgr");//이동할 경로를 지정합니다.
 	         return forward;
 		}catch(IOException ex) {
 			ex.printStackTrace();

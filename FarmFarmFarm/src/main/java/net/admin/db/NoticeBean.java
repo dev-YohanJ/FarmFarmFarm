@@ -1,4 +1,4 @@
-package net.board.db;
+package net.admin.db;
 
 public class NoticeBean {
 	private int		notice_num;	     //글번호

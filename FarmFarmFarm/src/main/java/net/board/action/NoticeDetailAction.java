@@ -2,30 +2,31 @@ package net.board.action;
 
 import java.io.IOException;
 
-import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import net.board.db.BoardBean;
-import net.board.db.BoardDAO;
+import net.admin.db.NoticeBean;
+import net.admin.db.NoticeDAO;
 
-public class NoticeDetailAction implements Action {
-	
-	public ActionForward execute(HttpServletRequest request, HttpServletResponse response) 
-			throws ServletException, IOException {
-		BoardDAO boarddao = new BoardDAO();
-		BoardBean boarddata = new BoardBean();
+
+public class NoticeDetailAction  implements Action {
+	public ActionForward execute(HttpServletRequest request,
+			HttpServletResponse response) throws SecurityException, IOException {
+		NoticeDAO noticedao=new NoticeDAO();
+		NoticeBean noticedata=new NoticeBean();
 		
-		//글번호 파라미터 값을 변수에 저장
-		int num = Integer.parseInt(request.getParameter("num"));
+		//글번호 파라미터 값을 num변수에 저장합니다.
+		int num=Integer.parseInt(request.getParameter("num"));
 		
-		//내용을 확인할 글의 조회수를 증가시킨다
-		boarddao.setReadCountUpdate(num);
+		//내용을 확인할 글의 조회수를 증가시킵니다.
+		noticedao.setReadCountUpdate(num);
 		
-		//글의 내용을 dao에서 읽은 후 결과를 boarddata 객체에 저장
-		boarddata = boarddao.getDetail(num);
+		//글의 내용을 DAO에서 읽은 후 얻은 결과를 noticedata 객체에 저장합니다.
+		noticedata=noticedao.getDetail(num);
 		
-		if(boarddata==null) {
+		//noticedata=null;//error테스트를 위한 값 설정
+		//DAO에서 글은 내용을 읽지 못했을 경우 null값을 반환합니다.
+		if(noticedata==null){
 			System.out.println("상세보기 실패");
 			ActionForward forward = new ActionForward();
 			forward.setRedirect(false);
@@ -35,11 +36,12 @@ public class NoticeDetailAction implements Action {
 		}
 		System.out.println("상세보기 성공");
 		
-		request.setAttribute("boarddata", boarddata);
+		//noticedata 객체를 request 객체에 저장합니다.
+		request.setAttribute("noticedata", noticedata);
 		
 		ActionForward forward = new ActionForward();
 		forward.setRedirect(false);
-		forward.setPath("board/boardView.jsp");
+		forward.setPath("admin/noticeView.jsp"); //글 내용 보기 페이지로 이동하기 위해 경로를 설정합니다.
 		return forward;
 	}
 }

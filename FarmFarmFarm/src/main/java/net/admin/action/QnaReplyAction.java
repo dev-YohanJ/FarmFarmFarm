@@ -1,4 +1,4 @@
-package net.board.action;
+package net.admin.action;
 
 import java.io.IOException;
 
@@ -6,8 +6,8 @@ import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import net.board.db.QnaBean;
-import net.board.db.QnaDAO;
+import net.admin.db.QnaBean;
+import net.admin.db.QnaDAO;
 
 
 
@@ -57,7 +57,7 @@ public class QnaReplyAction implements Action {
 	      System.out.println("답장 저장 완료");   
 	      forward.setRedirect(true);
 	      //답변 글 내용을 확인하기 위해 글 내용 보기 페이지를 경로로 설정합니다.
-	      forward.setPath("QnaDetailAction.bo?num="+result);
+	      forward.setPath("QnaDetailAction.ad?num="+result);
 	      return forward;
 	   }
 	}

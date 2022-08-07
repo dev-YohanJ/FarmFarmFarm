@@ -1,4 +1,4 @@
-package net.board.db;
+package net.admin.db;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;

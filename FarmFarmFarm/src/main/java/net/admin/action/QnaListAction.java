@@ -1,4 +1,4 @@
-package net.board.action;
+package net.admin.action;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -12,16 +12,16 @@ import com.google.gson.Gson;
 import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
 
-import net.admin.db.NoticeBean;
-import net.admin.db.NoticeDAO;
+import net.admin.db.QnaBean;
+import net.admin.db.QnaDAO;
 
-public class NoticeListAction implements Action{
+public class QnaListAction implements Action{
 	@Override
 	public ActionForward execute(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
 		
-		NoticeDAO noticedao = new NoticeDAO();
-		List<NoticeBean> noticelist = new ArrayList<NoticeBean>();
+		QnaDAO qnadao = new QnaDAO();
+		List<QnaBean> qnalist = new ArrayList<QnaBean>();
 		
 		//로그인 성공시 파라미터 page가 없어요. 그래서 초기값이 필요합니다.
 		int page = 1;	//보여줄 page
@@ -38,10 +38,10 @@ public class NoticeListAction implements Action{
 		System.out.println("넘어온 limit =" + limit);
 		
 		// 총 리스트 수를 받아 옵니다.
-		int listcount = noticedao.getListCount();
+		int listcount = qnadao.getListCount();
 		
 		// 리스트를 받아옵니다.
-		noticelist = noticedao.getNoticeList(page, limit);
+		qnalist = qnadao.getQnaList(page, limit);
 		
 		/*
 		 * 총 페이지 수
@@ -71,7 +71,7 @@ public class NoticeListAction implements Action{
 		int startpage = ((page -1) / 10) * 10 + 1;
 		System.out.println("현재 페이지에 보여줄 시작 페이지 수 :" + startpage);
 		
-		// endpage: 현재 페이지 그룹에서 보여줄 마지막 페이지 수([10]. [20], [30] end...)
+		// endpage: 현재 페이지 그룹에서 보여줄 마지막 페이지 수([10]. [20], [30] emd...)
 		int endpage = startpage + 10 - 1;
 		System.out.println("현재 페이지에 보여줄 마지막 페이지 수:" + endpage);
 
@@ -100,15 +100,15 @@ public class NoticeListAction implements Action{
 			request.setAttribute("listcount", listcount);	// 총 글의 수
 			
 			// 헤당 페이지의 글 목록을 갖고 있는 리스트
-			request.setAttribute("noticelist", noticelist);
+			request.setAttribute("qnalist", qnalist);
 			
 			request.setAttribute("limit", limit);
 			ActionForward forward = new ActionForward();
 			forward.setRedirect(false);
 			
 			// 글 목록 페이지로 이동하기 위해 경로를 설정합니다.
-			forward.setPath("admin/noticeList.jsp");
-			return forward; // AdminForntController.java로 리턴됩니다.
+			forward.setPath("admin/qnaList.jsp");
+			return forward; // qnaForntController.java로 리턴됩니다.
 			
 		}else {
 			System.out.println("state=ajax");
@@ -126,9 +126,9 @@ public class NoticeListAction implements Action{
 			//메서드를 통해서 저장합니다.
 			//List형식을 JsonElement로 바꾸어 주어야 object에 저장할 수 있습니다.
 			// List => JsonElement
-			JsonElement je = new Gson().toJsonTree(noticelist);
-			System.out.println("noticelist="+je.toString());
-			object.add("noticelist", je);
+			JsonElement je = new Gson().toJsonTree(qnalist);
+			System.out.println("qnalist="+je.toString());
+			object.add("qnalist", je);
 			
 			response.setContentType("text/html;charset=utf-8");
 			response.getWriter().append(object.toString());

@@ -1,4 +1,4 @@
-package net.board.db;
+package net.admin.db;
 
 public class QnaBean {
 	private int		qna_num;	  //글번호
