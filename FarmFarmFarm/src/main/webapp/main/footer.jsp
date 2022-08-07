@@ -11,9 +11,10 @@
   <footer class="py-3 my-4">
     <ul class="nav justify-content-center border-bottom pb-3 mb-3">
       <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Home</a></li>
-      <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Fruits</a></li>
-      <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Vegetables</a></li>
-      <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Nuts</a></li>
+      <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">New</a></li>
+      <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Best100</a></li>
+      <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Seasonal</a></li>
+      <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Timesale</a></li>
       <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Info</a></li>
     </ul>
     <p class="text-center text-muted">© 2022 Farm Company, Inc</p>

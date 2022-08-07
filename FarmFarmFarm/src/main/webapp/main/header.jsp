@@ -41,7 +41,7 @@ li>.nav-link {color: black}
   </div>
 
 <!-- Navbar -->
-<nav class="navbar navbar-expand-lg navbar-dark" style="background: #39A92E" aria-label="Tenth navbar example">
+<nav class="navbar navbar-expand-lg navbar-dark sticky-top" style="background: #39A92E" aria-label="Tenth navbar example" >
     <div class="container-fluid">
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample08" aria-controls="navbarsExample08" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
