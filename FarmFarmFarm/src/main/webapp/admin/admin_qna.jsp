@@ -4,7 +4,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<jsp:include page="../main/header.jsp"/><hr>
+<jsp:include page="../other/header.jsp"/><hr>
 <style>
 	select.form-control{
 		width: auto;
@@ -24,9 +24,9 @@
 	}
 	
 	body > div > table > thead > tr:nth-child(2) > th:nth-child(1){width: 15%;}
-	body > div > table > thead > tr:nth-child(2) > th:nth-child(2){width: 70%;}
-	body > div > table > thead > tr:nth-child(2) > th:nth-child(3){width: 10%;}
-	body > div > table > thead > tr:nth-child(2) > th:nth-child(4){width: 5%;}
+	body > div > table > thead > tr:nth-child(2) > th:nth-child(2){width: 50%;}
+	body > div > table > thead > tr:nth-child(2) > th:nth-child(3){width: 20%;}
+	body > div > table > thead > tr:nth-child(2) > th:nth-child(4){width: 15%;}
 </style>
 <script src="js/list.js"></script>
 <meta charset="UTF-8">
@@ -42,13 +42,13 @@
 <body>
 <div class="container-fluid" style="margin-top: 10px; padding:30px">
   <div class="row">
-    <div class="col-sm-2 bg-light">
+    <div class="col-sm-1 bg-light">
       <aside>
         <jsp:include page = "admin_left.jsp"/>
       </aside>
         </div>
         
-        <div class="col-sm-8" style="margin-bottom:5rem">
+        <div class="col-sm-10" style="margin-bottom:5rem">
         <h3 style="text-align:center">문의 게시판</h3>
       <section>
         <table class="table" style="border-bottom:1px solid black">
@@ -160,7 +160,7 @@
 </body>
 <script>
 	var pagefile='<%=pagefile%>';
-	var filelist = ["admin_notice", "admin_qna", "admin_goods"];
+	var filelist = ["newitem", "bestitem", "useditem"];
 	
 	for(var index=0; index<filelist.length; index++){
 		if(pagefile==filelist[index]){
@@ -171,5 +171,5 @@
 	}
 </script>
 <hr>
-<jsp:include page="../main/footer.jsp"/>
+<jsp:include page="../other/footer.jsp"/>
 </html>

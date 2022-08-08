@@ -1,31 +1,12 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"%> 
     
-<!-- main contents -->
-<main class=container>
-
-<!-- Sidebar -->
-  <div class="d-flex flex-column flex-shrink-0 p-3 bg-light left-bar">
-    <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
-      <svg class="bi pe-none me-2" width="40" height="32"><use xlink:href="#bootstrap"/></svg>
-      <span class="fs-4">고객센터</span>
-    </a>
-    <hr>
-    <ul class="nav nav-pills flex-column mb-auto">
+<ul class="nav nav-pills flex-column" style="text-align:center">
+	<br><b>고객센터</b><br>
+	
       <li class="nav-item">
-        <a href="board_notice.jsp?page=notice" class="nav-link active" aria-current="page" style="background: #39A92E">
-          <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#notice"/></svg>
-          공지사항
-        </a>
+        <a class="nav-link " href="board_notice.jsp?page=notice">공지사항</a><br>
       </li>
-      <li>
-        <a href="board_qna.jsp?page=qna" class="nav-link link-dark">
-          <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#qna"/></svg>
-          문의 게시판
-        </a>
+      <li class="nav-item">
+        <a class="nav-link" href="board_qna.jsp?page=qna">문의게시판</a><br>
       </li>
-    </ul>
-    <hr>
-  </div>
-
-
-</main>    
+</ul>
