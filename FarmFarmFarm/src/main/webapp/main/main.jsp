@@ -34,21 +34,21 @@
   </div>
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img src="../image/ad/ad.jpg" class="d-block w-100 h600" alt="wheat">
+      <img src="image/ad/ad.jpg" class="d-block w-100 h600" alt="wheat">
       <div class="carousel-caption d-none d-md-block">
         <h1>메인 배너광고</h1>
         <p>Some representative placeholder content for the first slide.</p>
       </div>
     </div>
     <div class="carousel-item">
-      <img src="../image/ad/ad2.jpg" class="d-block w-100 h600" alt="nuts">
+      <img src="image/ad/ad2.jpg" class="d-block w-100 h600" alt="nuts">
       <div class="carousel-caption d-none d-md-block">
         <h1>메인 배너광고2</h1>
         <p>Some representative placeholder content for the second slide.</p>
       </div>
     </div>
     <div class="carousel-item">
-      <img src="../image/ad/ad3.jpg" class="d-block w-100 h600" alt="apple">
+      <img src="image/ad/ad3.jpg" class="d-block w-100 h600" alt="apple">
       <div class="carousel-caption d-none d-md-block">
         <h1>메인 배너광고3</h1>
         <p>Some representative placeholder content for the third slide.</p>
@@ -79,7 +79,7 @@
           <div class="card shadow-sm">
 	         <a href="#">
 	           <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" preserveAspectRatio="xMidYMid" focusable="true">
-	            	<image href="../image/fruits/grape.jpg" width="100%" height="100%"/>
+	            	<image href="image/fruits/grape.jpg" width="100%" height="100%"/>
 	            	<%-- <text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text> --%>
 	            </svg>
 	          </a>
@@ -100,7 +100,7 @@
           <div class="card shadow-sm">
 	         <a href="#">
 	           <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" preserveAspectRatio="xMidYMid" focusable="true">
-	            	<image href="../image/fruits/peach.jpg" width="100%" height="100%"/>
+	            	<image href="image/fruits/peach.jpg" width="100%" height="100%"/>
 	            	<%-- <text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text> --%>
 	            </svg>
 	          </a>
@@ -121,7 +121,7 @@
           <div class="card shadow-sm">
 	         <a href="#">
 	           <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" preserveAspectRatio="xMidYMid" focusable="true">
-	            	<image href="../image/vegetables/cherryTomato4.jpg" width="100%" height="100%"/>
+	            	<image href="image/vegetables/cherryTomato4.jpg" width="100%" height="100%"/>
 	            	<%-- <text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text> --%>
 	            </svg>
 	          </a>
@@ -143,7 +143,7 @@
           <div class="card shadow-sm">
 	         <a href="#">
 	           <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" preserveAspectRatio="xMidYMid" focusable="true">
-	            	<image href="../image/vegetables/potato.jpg" width="100%" height="100%"/>
+	            	<image href="image/vegetables/potato.jpg" width="100%" height="100%"/>
 	            	<%-- <text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text> --%>
 	            </svg>
 	          </a>
@@ -164,7 +164,7 @@
           <div class="card shadow-sm">
 	         <a href="#">
 	           <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" preserveAspectRatio="xMidYMid" focusable="true">
-	            	<image href="../image/vegetables/onion.jpg" width="100%" height="100%"/>
+	            	<image href="image/vegetables/onion.jpg" width="100%" height="100%"/>
 	            	<%-- <text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text> --%>
 	            </svg>
 	          </a>
@@ -185,7 +185,7 @@
           <div class="card shadow-sm">
 	         <a href="#">
 	           <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" preserveAspectRatio="xMidYMid" focusable="true">
-	            	<image href="../image/nuts/peanut.jpg" width="100%" height="100%"/>
+	            	<image href="image/nuts/peanut.jpg" width="100%" height="100%"/>
 	            	<%-- <text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text> --%>
 	            </svg>
 	          </a>
