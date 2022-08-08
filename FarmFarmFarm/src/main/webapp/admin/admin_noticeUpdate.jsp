@@ -1,27 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-<!DOCTYPE html>
-<html>
-<head>
-<jsp:include page="../main/header.jsp"/><hr>
-<style>
-	select.form-control{
-		width: auto;
-		margin-bottom: 2em;
-		display:inline-block;
-	}
-	
-	.rows{
-		text-align: right;
-	}
-	
-	.gray{
-		color: gray
-	}
-	
-</style>
-<script src="js/list.js"></script>
 <meta charset="UTF-8">
 <title>Insert title here</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -66,7 +44,7 @@
 		   rows="10" class="form-control" placeholder="내용을 입력하세요"></textarea>
   </div>
   <div class="form-group" style="text-align: center">
-  	<button type=submit class="btn btn-primary">등록</button>
+  	<button type=submit class="btn btn-primary">수정</button>
   	<button type=reset class="btn btn-danger">취소</button>
   </div>
   
@@ -75,13 +53,6 @@
 </div>
 </div>
 
-<%-- 게시글이 없는 경우 --%>
-<c:if test="${listcount == 0 }">
-	<font size=5>등록된 글이 없습니다.</font>
-</c:if>
-
-
-	
 </div>
 </body>
 <script>
