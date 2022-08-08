@@ -8,10 +8,13 @@
 <title>mainpage</title>
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
 <style>
-img.h500 {height:600px}
-
-
-
+	img.h600 {height:600px}
+	.items_p {text-align:center}
+	.card shadow-sm {height:350px}
+	.card-text-og {font-size:12px; color:darkgray; text-decoration:line-through}
+	.card-text-cl {font-size:15px; color:red}
+	.free-ship {width:50px; padding: 0 6px; font-size:10px; color:#767676; border:1px #ddd solid; border-radius:10px; }
+	h5>a {color: black; text-decoration: none}
 </style>
 </head>
 <body>
@@ -30,23 +33,23 @@ img.h500 {height:600px}
   </div>
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img src="../image/ad/ad.jpg" class="d-block w-100 h500" alt="wheat">
+      <img src="../image/ad/ad.jpg" class="d-block w-100 h600" alt="wheat">
       <div class="carousel-caption d-none d-md-block">
         <h1>메인 배너광고</h1>
         <p>Some representative placeholder content for the first slide.</p>
       </div>
     </div>
     <div class="carousel-item">
-      <img src="../image/ad/ad2.jpg" class="d-block w-100 h500" alt="nuts">
+      <img src="../image/ad/ad2.jpg" class="d-block w-100 h600" alt="nuts">
       <div class="carousel-caption d-none d-md-block">
-        <h2>메인 배너광고2</h2>
+        <h1>메인 배너광고2</h1>
         <p>Some representative placeholder content for the second slide.</p>
       </div>
     </div>
     <div class="carousel-item">
-      <img src="../image/ad/ad3.jpg" class="d-block w-100 h500" alt="apple">
+      <img src="../image/ad/ad3.jpg" class="d-block w-100 h600" alt="apple">
       <div class="carousel-caption d-none d-md-block">
-        <h2>메인 배너광고3</h2>
+        <h1>메인 배너광고3</h1>
         <p>Some representative placeholder content for the third slide.</p>
       </div>
     </div>
@@ -62,106 +65,138 @@ img.h500 {height:600px}
 </div>
 
 
-
   <!-- items -->
   <div class="album py-5 bg-light">
+	<h3 class="items_p">직거래 순위 베스트</h3>
+	<p class="items_p">가장 사랑을 많이 받고 있는 우리 농산품</p>  
+
     <div class="container">
 
       <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+      	<!-- item1 -->
         <div class="col">
           <div class="card shadow-sm">
-            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-
+	         <a href="#">
+	           <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" preserveAspectRatio="xMidYMid" focusable="true">
+	            	<image href="../image/fruits/grape.jpg" width="100%" height="100%"/>
+	            	<%-- <text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text> --%>
+	            </svg>
+	          </a>
+           
             <div class="card-body">
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                </div>
-                <small class="text-muted">9 mins</small>
+              <h5 class="card-title link"><a href="#">새콤달콤한 가평 포도 2kg</a></h5>
+              <div class="price">
+              	<span class="card-text"> 32,900원</span>
+	            <span class="card-text-og">47,000원</span>
+	            <span class="card-text-cl">30%</span>
               </div>
+              <p class="free-ship">무료배송</p>
             </div>
           </div>
         </div>
+        <!-- item2 -->
         <div class="col">
           <div class="card shadow-sm">
-            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-
+	         <a href="#">
+	           <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" preserveAspectRatio="xMidYMid" focusable="true">
+	            	<image href="../image/fruits/peach.jpg" width="100%" height="100%"/>
+	            	<%-- <text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text> --%>
+	            </svg>
+	          </a>
+           
             <div class="card-body">
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                </div>
-                <small class="text-muted">9 mins</small>
+              <h5 class="card-title link"><a href="#">맛좋은 황도복숭아 4kg</a></h5>
+              <div class="price">
+              	<span class="card-text"> 32,900원</span>
+	            <span class="card-text-og">29,900원</span>
+	            <span class="card-text-cl">10%</span>
               </div>
+              <p class="free-ship">무료배송</p>
             </div>
           </div>
         </div>
+        <!-- item3 -->
         <div class="col">
           <div class="card shadow-sm">
-            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-
+	         <a href="#">
+	           <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" preserveAspectRatio="xMidYMid" focusable="true">
+	            	<image href="../image/vegetables/cherryTomato4.jpg" width="100%" height="100%"/>
+	            	<%-- <text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text> --%>
+	            </svg>
+	          </a>
+           
             <div class="card-body">
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                </div>
-                <small class="text-muted">9 mins</small>
+              <h5 class="card-title link"><a href="#">친환경 유기농 방울토마토 2kg</a></h5>
+              <div class="price">
+              	<span class="card-text"> 13,900원</span>
+	            <span class="card-text-og">19,900원</span>
+	            <span class="card-text-cl">30%</span>
               </div>
+              <p class="free-ship">무료배송</p>
             </div>
           </div>
         </div>
-
+        
+        <!-- item4 -->
         <div class="col">
           <div class="card shadow-sm">
-            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-
+	         <a href="#">
+	           <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" preserveAspectRatio="xMidYMid" focusable="true">
+	            	<image href="../image/vegetables/potato.jpg" width="100%" height="100%"/>
+	            	<%-- <text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text> --%>
+	            </svg>
+	          </a>
+           
             <div class="card-body">
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                </div>
-                <small class="text-muted">9 mins</small>
+              <h5 class="card-title link"><a href="#">전국최고 수미감자 5kg</a></h5>
+              <div class="price">
+              	<span class="card-text"> 16,900원</span>
+	            <span class="card-text-og">19,900원</span>
+	            <span class="card-text-cl">15%</span>
               </div>
+              <p class="free-ship">무료배송</p>
             </div>
           </div>
         </div>
+        <!-- item5 -->
         <div class="col">
           <div class="card shadow-sm">
-            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-
+	         <a href="#">
+	           <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" preserveAspectRatio="xMidYMid" focusable="true">
+	            	<image href="../image/vegetables/onion.jpg" width="100%" height="100%"/>
+	            	<%-- <text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text> --%>
+	            </svg>
+	          </a>
+           
             <div class="card-body">
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                </div>
-                <small class="text-muted">9 mins</small>
+              <h5 class="card-title link"><a href="#">저장용 일반양파 5kg</a></h5>
+              <div class="price">
+              	<span class="card-text"> 15,900원</span>
+	            <span class="card-text-og">17,900원</span>
+	            <span class="card-text-cl">11%</span>
               </div>
+              <p class="free-ship">무료배송</p>
             </div>
           </div>
         </div>
+        <!-- item6 -->
         <div class="col">
           <div class="card shadow-sm">
-            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-
+	         <a href="#">
+	           <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" preserveAspectRatio="xMidYMid" focusable="true">
+	            	<image href="../image/nuts/peanut.jpg" width="100%" height="100%"/>
+	            	<%-- <text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text> --%>
+	            </svg>
+	          </a>
+           
             <div class="card-body">
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                </div>
-                <small class="text-muted">9 mins</small>
+              <h5 class="card-title link"><a href="#">국내산 생땅콩 500g</a></h5>
+              <div class="price">
+              	<span class="card-text"> 13,900원</span>
+	            <span class="card-text-og">8,900원</span>
+	            <span class="card-text-cl">36%</span>
               </div>
+              <p class="free-ship">무료배송</p>
             </div>
           </div>
         </div>
