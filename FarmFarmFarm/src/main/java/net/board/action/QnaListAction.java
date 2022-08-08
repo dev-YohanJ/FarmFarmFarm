@@ -20,6 +20,8 @@ public class QnaListAction implements Action{
 	public ActionForward execute(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
 		
+		request.setAttribute("pagefile", "board_qna");
+		
 		QnaDAO qnadao = new QnaDAO();
 		List<QnaBean> qnalist = new ArrayList<QnaBean>();
 		
@@ -107,7 +109,7 @@ public class QnaListAction implements Action{
 			forward.setRedirect(false);
 			
 			// 글 목록 페이지로 이동하기 위해 경로를 설정합니다.
-			forward.setPath("admin/qnaList.jsp");
+			forward.setPath("board/board_qna.jsp");
 			return forward; // qnaForntController.java로 리턴됩니다.
 			
 		}else {

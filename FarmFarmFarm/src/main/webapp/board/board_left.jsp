@@ -12,13 +12,13 @@
     <hr>
     <ul class="nav nav-pills flex-column mb-auto">
       <li class="nav-item">
-        <a href="board_notice.jsp?page=notice" class="nav-link active" aria-current="page" style="background: #39A92E">
+        <a href="NoticeList.bo" class="nav-link active" aria-current="page" style="background: #39A92E">
           <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#notice"/></svg>
           공지사항
         </a>
       </li>
       <li>
-        <a href="board_qna.jsp?page=qna" class="nav-link link-dark">
+        <a href="QnaList.bo" class="nav-link link-dark">
           <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#qna"/></svg>
           문의 게시판
         </a>

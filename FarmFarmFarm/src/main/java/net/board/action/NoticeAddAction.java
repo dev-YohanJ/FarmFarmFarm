@@ -21,7 +21,7 @@ public class NoticeAddAction implements Action {
 	   
 		NoticeDAO noticedao 	 =new NoticeDAO();
 		NoticeBean noticedata  	 =new NoticeBean();
-		ActionForward forward=new ActionForward();
+		ActionForward forward	 =new ActionForward();
 		
 		String realFolder="";
 		

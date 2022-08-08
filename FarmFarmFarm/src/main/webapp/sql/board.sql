@@ -21,6 +21,8 @@ select nvl(max(notice_num),0)+1 from notice;
 SELECT * FROM NOTICE;
 
 insert into NOTICE (NOTICE_NUM, NOTICE_SUBJECT, NOTICE_NAME, NOTICE_RE_REF) values(1, '공지사항 테스트', 'admin', 1);
+insert into NOTICE (NOTICE_NUM, NOTICE_SUBJECT, NOTICE_NAME, NOTICE_RE_REF) values(2, '공지사항 테스트2', 'admin', 2);
+insert into NOTICE (NOTICE_NUM, NOTICE_SUBJECT, NOTICE_NAME, NOTICE_RE_REF) values(3, '공지사항 테스트3', 'admin', 3);
 
 insert into QNA (QNA_NUM, QNA_SUBJECT, QNA_NAME, QNA_RE_REF) values(1, '오픈안내', 'admin', 1);
 

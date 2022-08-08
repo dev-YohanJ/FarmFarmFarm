@@ -12,19 +12,19 @@
     <hr>
     <ul class="nav nav-pills flex-column mb-auto">
       <li class="nav-item">
-        <a href="admin_notice.jsp?page=notice" class="nav-link active" aria-current="page" style="background: #39A92E">
+        <a href="NoticeList.mgr" class="nav-link active" aria-current="page" style="background: #39A92E">
           <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#notice"/></svg>
           공지사항
         </a>
       </li>
       <li>
-        <a href="admin_qna.jsp?page=qna" class="nav-link link-dark">
+        <a href="QnaList.mgr" class="nav-link link-dark">
           <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#qna"/></svg>
           문의 게시판
         </a>
       </li>
       <li>
-        <a href="admin_goods.jsp?page=goods" class="nav-link link-dark">
+        <a href="GoodsList.mgr" class="nav-link link-dark">
           <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#goods"/></svg>
           상품관리
         </a>
