@@ -134,7 +134,7 @@ proQty.on('click', '.qtybtn', function () {
         }
     }
     $button.parent().find('input').val(newVal);
-    $("body > section > div > div > div:nth-child(2) > div > a.primary-btn").prop("href", "items.cart?id=" + ${iteminfo.item_id} +"&num="+newVal);
+    $("body > section > div > div > div:nth-child(2) > div > a.primary-btn").prop("href", "items.cart?id=" + ${iteminfo.item_id} + "&num=" + newVal);
 });
 </script>
 </body>
