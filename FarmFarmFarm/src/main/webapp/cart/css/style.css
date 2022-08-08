@@ -167,8 +167,9 @@ ol {
 	color: #ffffff;
 	text-transform: uppercase;
 	font-weight: 700;
-	background: #7fad39;
+	background: #39A92E;
 	letter-spacing: 2px;
+	text-decoration:none;
 }
 
 .site-btn {
