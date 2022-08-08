@@ -8,7 +8,7 @@
 	 password="asdfASDF1234!@#$"
 	 driverClassName="oracle.jdbc.driver.OracleDriver"
 	 factory="org.apache.tomcat.dbcp.dbcp2.BasicDataSourceFactory"
-	 url="jdbc:oracle:thin:@DB20220615_high?TNS_ADMIN=D:\Workspace\Wallet_DB20220615"
+	 url="jdbc:oracle:thin:@DB20220615_high?TNS_ADMIN=/Users/yohan/Desktop/Workspace/Wallet_DB20220615"
 	 maxTotal="500"
 	 maxIdle="100" />
 </Context>
