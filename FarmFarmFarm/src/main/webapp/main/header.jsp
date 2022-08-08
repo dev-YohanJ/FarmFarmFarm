@@ -5,19 +5,19 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+ <link href="https://getbootstrap.com/docs/5.2/assets/css/docs.css" rel="stylesheet">
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+
 <style>
 #navbarsExample08 li {
 	margin: 0px 50px 0px 20px;
 }
-
 input.form-control.me-2 {
 	width: 200px;
 }
-
 .btn-outline-light {
 	margin-right: 40px;
 }
-
 li>.nav-link {color: black}
 
 </style>
@@ -43,7 +43,9 @@ li>.nav-link {color: black}
 <!-- Navbar -->
 <nav class="navbar navbar-expand-lg navbar-dark sticky-top" style="background: #39A92E" aria-label="Tenth navbar example" >
     <div class="container-fluid">
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample08" aria-controls="navbarsExample08" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+      			 data-bs-target="#navbarsExample08" aria-controls="navbarsExample08" 
+      			 aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
 
