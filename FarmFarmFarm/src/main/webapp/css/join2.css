@@ -1,0 +1,142 @@
+
+body {
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+select, input[type=text], input[type=password], input[type="button"] {
+	width: 100%;
+	padding: 15px;
+	margin: 5px 0 22px 0;
+	display: inline-block;
+	border: none;
+	background: #f1f1f1;
+	outline: none;
+	height: 40px;
+}
+
+select {
+	padding: 10px 15px 10px 15px;
+	vertical-align: bottom;
+}
+
+legend {
+	text-align: center;
+	font-size: 40px;
+	font-weight: bold
+}
+
+ #post1 {
+	width: 70%
+}
+
+
+
+#id+input, #post1+input {
+	width: 29%;
+	background: #4CAF50;
+	line-height: 10px;
+	vertical-align: bottom;
+}
+
+
+
+#domain {
+	width: 23%
+}
+#email
+{
+	width: 39%
+}
+
+
+#sel {
+	width: 30%;
+	background: lightgray
+}
+
+.container2 {
+	border: 1px solid lightgray;
+	padding: 1.5% 1%;
+	word-spacing: 10px;
+	margin-bottom: 20px;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+	background-color: #ddd;
+	outline: none;
+}
+
+input[type=button]:hover {
+	opacity: 0.8;
+	cursor: pointer
+}
+
+button {
+	background-color: #4CAF50;
+	color: white;
+	padding: 14px 20px;
+	margin: 8px 0;
+	border: none;
+	cursor: pointer;
+	width: 100%;
+	opacity: 0.9;
+}
+
+button:hover {
+	opacity: 1;
+}
+
+.cancelbtn {
+	padding: 14px 20px;
+	background-color: #f44336;
+}
+
+.cancelbtn, .signupbtn {
+	float: left;
+	width: 50%;
+}
+
+.container {
+	padding: 16px;
+}
+
+#myform {
+	background-color: #fefefe;
+	margin: 5% auto 15% auto;
+	width: 550px;
+}
+
+label {
+	display: block;
+	font-weight: bold;
+}
+
+img { display: block; margin: 0px auto; }
+#bir_wrap {
+    display: table;
+    width: 100%;
+}
+
+#bir_yy {
+    display: table-cell;
+    width: 147px;
+}
+
+#bir_mm {
+    display: table-cell;
+    width: 147px;
+    vertical-align: middle;
+}
+
+#bir_dd {
+    display: table-cell;
+    width: 147px;
+}
+
+#bir_mm, #bir_dd {
+    padding-left: 10px;
+}
