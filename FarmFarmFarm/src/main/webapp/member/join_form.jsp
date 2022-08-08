@@ -1,19 +1,164 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-<!-- 
-  아이디를 입력 후 아이디 중복검사를 안해도 submit 되는 오류 발생
+<!--  2022년 8월 8일 10시 50분 작성.
+ 팜팜팜 회원가입 폼 css는 스타일에 포함되어있으며 
+ 제이쿼리와 validate_join 두가지 파일이 필요함.
  -->
 <!DOCTYPE html>
 <html>
 <meta charset="UTF-8">
 
-<link href="${pageContext.request.contextPath}
-/css/join2.css" rel="stylesheet" type="text/css">
-<script src="<%=request.getContextPath()%>/member/jquery-3.6.0.js"></script>
+<style>
+
+body {
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+select, input[type=text], input[type=password], input[type="button"] {
+	width: 100%;
+	padding: 15px;
+	margin: 5px 0 22px 0;
+	display: inline-block;
+	border: none;
+	background: #f1f1f1;
+	outline: none;
+	height: 40px;
+}
+
+select {
+	padding: 10px 15px 10px 15px;
+	vertical-align: bottom;
+}
+
+legend {
+	text-align: center;
+	font-size: 40px;
+	font-weight: bold
+}
+
+ #post1 {
+	width: 70%
+}
+
+
+
+#id+input, #post1+input {
+	width: 29%;
+	background: #4CAF50;
+	line-height: 10px;
+	vertical-align: bottom;
+}
+
+
+
+#domain {
+	width: 23%
+}
+#email
+{
+	width: 39%
+}
+
+
+#sel {
+	width: 30%;
+	background: lightgray
+}
+
+.container2 {
+	border: 1px solid lightgray;
+	padding: 1.5% 1%;
+	word-spacing: 10px;
+	margin-bottom: 20px;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+	background-color: #ddd;
+	outline: none;
+}
+
+input[type=button]:hover {
+	opacity: 0.8;
+	cursor: pointer
+}
+
+button {
+	background-color: #4CAF50;
+	color: white;
+	padding: 14px 20px;
+	margin: 8px 0;
+	border: none;
+	cursor: pointer;
+	width: 100%;
+	opacity: 0.9;
+}
+
+button:hover {
+	opacity: 1;
+}
+
+.cancelbtn {
+	padding: 14px 20px;
+	background-color: #f44336;
+}
+
+.cancelbtn, .signupbtn {
+	float: left;
+	width: 50%;
+}
+
+.container {
+	padding: 16px;
+}
+
+#myform {
+	background-color: #fefefe;
+	margin: 5% auto 15% auto;
+	width: 550px;
+}
+
+label {
+	display: block;
+	font-weight: bold;
+}
+
+img { display: block; margin: 0px auto; }
+#bir_wrap {
+    display: table;
+    width: 100%;
+}
+
+#bir_yy {
+    display: table-cell;
+    width: 147px;
+}
+
+#bir_mm {
+    display: table-cell;
+    width: 147px;
+    vertical-align: middle;
+}
+
+#bir_dd {
+    display: table-cell;
+    width: 147px;
+}
+
+#bir_mm, #bir_dd {
+    padding-left: 10px;
+}
+
+
+</style>
+<script src="jquery-3.6.0.cha js"></script>
 
 <script src="http://dmaps.daum.net/map_js_init/postcode.v2.js"></script> 
 
-<script src="<%=request.getContextPath()%>/member/validate2.js"></script>
+<script src="validate_join.js"></script>
 
 
 <body>
@@ -21,7 +166,7 @@
 
   <form name="myform" method="post" action="join_ok" 
          id="myform" >
-  <div><img src="../image/farm.png" alt="image_farm" style ="text-align : center;"></div>
+  <div><img src="farm.png" alt="image_farm" style ="text-align : center;"></div>
     <div class="container">
      <div><h3>회원 정보를 입력해주세요.</h3></div>
  

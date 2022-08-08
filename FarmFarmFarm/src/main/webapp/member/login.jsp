@@ -10,17 +10,13 @@
 
     
 
- <%-- 부트스트랩 <link href="../css/bootstrap.min.css">파일이 필요합니다. 
-    <link href="../css/signin.css" rel="stylesheet">
+ <%-- 부트스트랩 <link href="../css/bootstrap.min.css" 및 사진파일이 필요합니다. 
+    
  --%>
-<link href="../css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<link href="bootstrap.min.cha.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
     <!-- Favicons -->
-<link rel="apple-touch-icon" href="/docs/5.0/assets/img/favicons/apple-touch-icon.png" sizes="180x180">
-<link rel="icon" href="/docs/5.0/assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
-<link rel="icon" href="/docs/5.0/assets/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
-<link rel="manifest" href="/docs/5.0/assets/img/favicons/manifest.json">
-<link rel="icon" href="/docs/5.0/assets/img/favicons/favicon.ico">
+
 <meta name="theme-color" content="#7952b3">
 
 
@@ -41,18 +37,56 @@
       
 	a{ text-decoration : none;
       }
+      
+      html,
+body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: #f5f5f5;
+}
+
+.form-signin {
+  width: 100%;
+  max-width: 330px;
+  padding: 15px;
+  margin: auto;
+}
+
+.form-signin .checkbox {
+  font-weight: 400;
+}
+
+.form-signin .form-floating:focus-within {
+  z-index: 2;
+}
+
+.form-signin input[type="email"] {
+  margin-bottom: -1px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.form-signin input[type="password"] {
+  margin-bottom: 10px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+      
     </style>
 
-    
-    <!-- Custom styles for this template -->
-    <link href="../css/signin.css" rel="stylesheet">
-    <!--  화면이 중앙으로 이동되게한다. -->
+
   </head>
   <body class="text-center">
     
 <main class="form-signin">
   <form>
-    <img class="mb-4" src="../image/farm.png" alt="" width="72" height="57">
+    <img class="mb-4" src="farm.png" alt="" width="72" height="57">
     <h1 class="h3 mb-3 fw-normal">환영합니다.</h1>
 
     <div class="form-floating">
