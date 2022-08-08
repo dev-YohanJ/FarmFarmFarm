@@ -11,13 +11,14 @@
 	.banner {position: relative;
     	width: 100%;
     	height: 0;
-    	padding-top: calc(350 / 1000 * 100%);}
+    	padding-top: calc(350 / 1000 * 100%);
+    	margin-top:10px}
 	img.bn { position: absolute;
             top: 0;
             left: 0;
             width: 100%;
             height: 100%;
-            border-radius:0 0 5px 5px;
+            border-radius:5px;
             opacity:0.8}
     
     .bl1 {border:1px solid lightgray; border-radius:10px}
