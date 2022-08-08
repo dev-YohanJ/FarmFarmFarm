@@ -107,7 +107,7 @@ public class NoticeListAction implements Action{
 			forward.setRedirect(false);
 			
 			// 글 목록 페이지로 이동하기 위해 경로를 설정합니다.
-			forward.setPath("admin/noticeList.jsp");
+			forward.setPath("admin/admin_notice.jsp");
 			return forward; // AdminForntController.java로 리턴됩니다.
 			
 		}else {
