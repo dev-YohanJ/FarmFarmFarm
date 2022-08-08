@@ -189,7 +189,6 @@
 	            	<%-- <text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text> --%>
 	            </svg>
 	          </a>
-           
             <div class="card-body">
               <h5 class="card-title link"><a href="#">국내산 생땅콩 500g</a></h5>
               <div class="price">
