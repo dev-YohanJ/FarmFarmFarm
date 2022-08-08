@@ -3,7 +3,7 @@
 <html>
 <head>
 
-<jsp:include page="../main/header.jsp"/>
+<jsp:include page="../other/header.jsp"/>
 
 <style>
 	select.form-control{
