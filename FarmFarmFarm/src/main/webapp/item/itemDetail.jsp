@@ -17,14 +17,14 @@
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <jsp:include page="../main/header.jsp"/>
-<script src="../js/jquery-3.3.1.min.js"></script>
-<script src="../js/bootstrap.min.js"></script>
-<script src="../js/jquery.nice-select.min.js"></script>
-<script src="../js/jquery-ui.min.js"></script>
-<script src="../js/jquery.slicknav.js"></script>
-<script src="./js/mixitup.min.js"></script>
-<script src="../js/owl.carousel.min.js"></script>
-<script src="../js/main.js"></script>
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.nice-select.min.js"></script>
+<script src="js/jquery-ui.min.js"></script>
+<script src="js/jquery.slicknav.js"></script>
+<script src="js/mixitup.min.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/main.js"></script>
 <title>제품 상세페이지</title>
 </head>
 <body>
@@ -111,13 +111,14 @@
 							<div class="quantity">
 								<div class="pro-qty">
 									<span class="dec qtybtn">-</span>
-									<input type="text" value="1">
+										<input type="text" value="1">
 									<span class="inc qtybtn">+</span>
 								</div>
 							</div>
 						</div>
 						<a href="#" class="primary-btn">ADD TO CARD</a>
 						<a href="#" class="heart-icon"><span class="icon_heart_alt"></span></a>
+						
 						<ul>
 							<li>
 								<b>재고 수량</b>
