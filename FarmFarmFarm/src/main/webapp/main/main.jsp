@@ -5,15 +5,16 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>mainpage</title>
+<title>main</title>
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
 <style>
-	img.h600 {height:600px}
+	img.h600 {height:500px}
 	.items_p {text-align:center}
 	.card shadow-sm {height:350px}
 	.card-text-og {font-size:12px; color:darkgray; text-decoration:line-through}
 	.card-text-cl {font-size:15px; color:red}
-	.free-ship {width:50px; padding: 0 6px; font-size:10px; color:#767676; border:1px #ddd solid; border-radius:10px; }
+	.free-ship {width:60px; padding: 0 6px; font-size:10px; color:#767676; 
+				text-align:center; border:1px #ddd solid; border-radius:10px; }
 	h5>a {color: black; text-decoration: none}
 </style>
 </head>
@@ -107,8 +108,8 @@
             <div class="card-body">
               <h5 class="card-title link"><a href="#">맛좋은 황도복숭아 4kg</a></h5>
               <div class="price">
-              	<span class="card-text"> 32,900원</span>
-	            <span class="card-text-og">29,900원</span>
+              	<span class="card-text"> 29,900원</span>
+	            <span class="card-text-og">32,900원</span>
 	            <span class="card-text-cl">10%</span>
               </div>
               <p class="free-ship">무료배송</p>
