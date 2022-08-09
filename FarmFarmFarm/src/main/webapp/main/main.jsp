@@ -76,7 +76,7 @@
       	<!-- item1 -->
         <div class="col">
           <div class="card shadow-sm">
-	         <a href="#">
+	         <a href="detail.tem?id=1">
 	           <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" preserveAspectRatio="xMidYMid" focusable="true">
 	            	<image href="image/fruits/grape.jpg" width="100%" height="100%"/>
 	            	<%-- <text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text> --%>
@@ -84,7 +84,7 @@
 	          </a>
            
             <div class="card-body">
-              <h5 class="card-title link"><a href="#">새콤달콤한 가평 포도 2kg</a></h5>
+              <h5 class="card-title link"><a href="detail.tem?id=1">새콤달콤한 가평 포도 2kg</a></h5>
               <div class="price">
               	<span class="card-text"> 32,900원</span>
 	            <span class="card-text-og">47,000원</span>
@@ -97,7 +97,7 @@
         <!-- item2 -->
         <div class="col">
           <div class="card shadow-sm">
-	         <a href="#">
+	         <a href="detail.tem?id=2">
 	           <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" preserveAspectRatio="xMidYMid" focusable="true">
 	            	<image href="image/fruits/peach.jpg" width="100%" height="100%"/>
 	            	<%-- <text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text> --%>
@@ -105,7 +105,7 @@
 	          </a>
            
             <div class="card-body">
-              <h5 class="card-title link"><a href="#">맛좋은 황도복숭아 4kg</a></h5>
+              <h5 class="card-title link"><a href="detail.tem?id=2">맛좋은 황도복숭아 4kg</a></h5>
               <div class="price">
               	<span class="card-text"> 32,900원</span>
 	            <span class="card-text-og">29,900원</span>
@@ -118,7 +118,7 @@
         <!-- item3 -->
         <div class="col">
           <div class="card shadow-sm">
-	         <a href="#">
+	         <a href="detail.tem?id=3">
 	           <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" preserveAspectRatio="xMidYMid" focusable="true">
 	            	<image href="image/vegetables/cherryTomato4.jpg" width="100%" height="100%"/>
 	            	<%-- <text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text> --%>
@@ -126,7 +126,7 @@
 	          </a>
            
             <div class="card-body">
-              <h5 class="card-title link"><a href="#">친환경 유기농 방울토마토 2kg</a></h5>
+              <h5 class="card-title link"><a href="detail.tem?id=3">친환경 유기농 방울토마토 2kg</a></h5>
               <div class="price">
               	<span class="card-text"> 13,900원</span>
 	            <span class="card-text-og">19,900원</span>
@@ -140,7 +140,7 @@
         <!-- item4 -->
         <div class="col">
           <div class="card shadow-sm">
-	         <a href="#">
+	         <a href="detail.tem?id=4">
 	           <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" preserveAspectRatio="xMidYMid" focusable="true">
 	            	<image href="image/vegetables/potato.jpg" width="100%" height="100%"/>
 	            	<%-- <text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text> --%>
@@ -148,7 +148,7 @@
 	          </a>
            
             <div class="card-body">
-              <h5 class="card-title link"><a href="#">전국최고 수미감자 5kg</a></h5>
+              <h5 class="card-title link"><a href="detail.tem?id=4">전국최고 수미감자 5kg</a></h5>
               <div class="price">
               	<span class="card-text"> 16,900원</span>
 	            <span class="card-text-og">19,900원</span>
@@ -161,7 +161,7 @@
         <!-- item5 -->
         <div class="col">
           <div class="card shadow-sm">
-	         <a href="#">
+	         <a href="detail.tem?id=5">
 	           <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" preserveAspectRatio="xMidYMid" focusable="true">
 	            	<image href="image/vegetables/onion.jpg" width="100%" height="100%"/>
 	            	<%-- <text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text> --%>
@@ -169,7 +169,7 @@
 	          </a>
            
             <div class="card-body">
-              <h5 class="card-title link"><a href="#">저장용 일반양파 5kg</a></h5>
+              <h5 class="card-title link"><a href="detail.tem?id=5">저장용 일반양파 5kg</a></h5>
               <div class="price">
               	<span class="card-text"> 15,900원</span>
 	            <span class="card-text-og">17,900원</span>
@@ -182,7 +182,7 @@
         <!-- item6 -->
         <div class="col">
           <div class="card shadow-sm">
-	         <a href="#">
+	         <a href="detail.tem?id=6">
 	           <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" preserveAspectRatio="xMidYMid" focusable="true">
 	            	<image href="image/nuts/peanut.jpg" width="100%" height="100%"/>
 	            	<%-- <text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text> --%>
@@ -190,7 +190,7 @@
 	          </a>
            
             <div class="card-body">
-              <h5 class="card-title link"><a href="#">국내산 생땅콩 500g</a></h5>
+              <h5 class="card-title link"><a href="detail.tem?id=6">국내산 생땅콩 500g</a></h5>
               <div class="price">
               	<span class="card-text"> 13,900원</span>
 	            <span class="card-text-og">8,900원</span>
