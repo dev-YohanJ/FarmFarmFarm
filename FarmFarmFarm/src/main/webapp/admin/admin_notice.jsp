@@ -4,7 +4,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<jsp:include page="../other/header.jsp"/><hr>
+<jsp:include page="../main/header.jsp"/><hr>
 <style>
 	select.form-control{
 		width: auto;
@@ -40,13 +40,13 @@
 <body>
 <div class="container-fluid" style="margin-top: 10px; padding:30px">
   <div class="row">
-    <div class="col-sm-1 bg-light">
+    <div class="col-sm-2 bg-light">
       <aside>
         <jsp:include page = "admin_left.jsp"/>
       </aside>
         </div>
         
-        <div class="col-sm-10" style="margin-bottom:5rem">
+        <div class="col-sm-8" style="margin-bottom:5rem">
         <h3 style="text-align:center">공지사항</h3>
       <section>
         <table class="table" style="border-bottom:1px solid black">
@@ -64,40 +64,49 @@
 			</tr>
 		  </thead>
 		  <tbody>
-		    <tr>
-		      <td>&nbsp;&nbsp;1</td>
-		      <td>환영합니다.</td>
-		      <td>2022-08-04</td>
-		      <td>17423</td>		      
-		      <td>
-		      	<a href="noticeUpdate.mgr?id=${m.id}">수정</a>/
-		      	<a href="noticeDelete.mgr?id=${m.id}">삭제</a>
-		      </td>
-		    </tr>
-		    <tr>
-		      <td>&nbsp;&nbsp;2</td>
-		      <td>배송 안내입니다.</td>
-		      <td>2022-08-04</td>
-		      <td>13123</td>		      
-		      <td>
-		      	<a href="noticeUpdate.mgr?id=${m.id}">수정</a>/
-		      	<a href="noticeDelete.mgr?id=${m.id}">삭제</a>
-		      </td>
-		    </tr>
-		    <tr>
-		      <td>&nbsp;&nbsp;3</td>
-		      <td>휴가 안내입니다.</td>
-		      <td>2022-08-06</td>
-		      <td>14412</td>		      
-		      <td>
-		      	<a href="noticeUpdate.mgr?id=${m.id}">수정</a>/
-		      	<a href="noticeDelete.mgr?id=${m.id}">삭제</a>
-		      </td>
-		    </tr>
-		    
+		    <c:set var="num" value="${listcount-(page-1)*limit }"/> <!-- 글 시작 번호  -->
+   <c:forEach var="b" items="${noticelist }">
+   <tr>
+   	<td><%-- 번호 --%>
+   		<c:out value="${num }"/><%-- num 출력 --%>
+   		<c:set var="num" value="${num-1 }"/><%-- num=num-1; 의미 --%>
+   	</td>
+   	<td><%-- 제목 --%>
+   	 <div>
+   	 	<%-- 답변글 제목 앞에 여백 처리 부분 
+   	 		  board_re_lev, board_num,
+   	 		  board_subject, board_name, board_date,
+   	 		  board_readcount : property 이름 --%>
+   	 	<c:if test="${b.notice_re_lev != 0 }"> <!-- 답글인 경우 -->
+   	 		<c:forEach var="a" begin="0" end="${b.notice_re_lev*2 }" step="1">
+   	 		&nbsp;
+   	 		</c:forEach>
+   	 		<img src = 'image/line.gif'>
+   	 	</c:if>
+   	 	
+   	 	<c:if test="${b.notice_re_lev == 0 }"> <%-- 원문인 경우 --%>
+   	 		&nbsp;
+   	 	</c:if>
+   	 	
+   	 	<a href="NoticeDetailAction.bo?num=${b.notice_num }">
+   	 	   <c:if test="${b.notice_subject.length()>=20 }">
+   	 	   	<c:out value="${b.notice_subject.substring(0, 20) }..."/>
+   	 	   </c:if>
+   	 	   <c:if test="${b.notice_subject.length()<20 }">
+   	 	   	<c:out value="${b.notice_subject }"/>
+   	 	   </c:if>
+   	 	</a>[${b.cnt}]
+   	 </div>
+   	</td>
+   <td><div>${b.notice_name }</div></td>	
+   <td><div>${b.notice_date }</div></td>	
+   <td><div>${b.notice_readcount }</div></td>	
+   </tr>
+   </c:forEach>
   		  </tbody>
  </table>
- <button type="button" class="btn btn-info float-right" onclick="location.href='admin_noticeWrite.jsp'">등록하기</button>
+ <button type="button" class="btn bg-light float-right" 
+ 		 onclick="location.href='admin_noticeWrite.jsp'">등록하기</button>
     			</section>
     		</div>
     	</div>
@@ -117,7 +126,7 @@
  		</c:if>
  		<c:if test="${page > 1 }">
  			<li class="page-item">
- 				<a href="BoardList.bo?page=${page-1 }"
+ 				<a href="NoticeList.bo?page=${page-1 }"
  				   class = "page-link">이전&nbsp;</a>
  			</li>
  		</c:if>
@@ -130,7 +139,7 @@
  			</c:if>
  			<c:if test="${a != page }">
  				<li class="page-item">
- 					<a href="BoardList.bo?page=${a}"
+ 					<a href="Notice.bo?page=${a}"
  					   class="page-link">${a}</a>
  				</li>
  			</c:if>
@@ -143,7 +152,7 @@
  		</c:if>
  		<c:if test="${page < maxpage }">
  			<li class="page-item">
- 				<a href="BoardList.bo?page=${page+1 }"
+ 				<a href="Notice.bo?page=${page+1 }"
  				   class="page-link">&nbsp;다음</a>
  			</li>
  		</c:if>
@@ -155,14 +164,12 @@
 <c:if test="${listcount == 0 }">
 	<font size=5>등록된 글이 없습니다.</font>
 </c:if>
-
-
-	
 </div>
 </body>
+
 <script>
 	var pagefile='<%=pagefile%>';
-	var filelist = ["newitem", "bestitem", "useditem"];
+	var filelist = ["admin_notice", "admin_qna", "admin_goods"];
 	
 	for(var index=0; index<filelist.length; index++){
 		if(pagefile==filelist[index]){
@@ -173,5 +180,5 @@
 	}
 </script>
 <hr>
-<jsp:include page="../other/footer.jsp"/>
+<jsp:include page="../main/footer.jsp"/>
 </html>

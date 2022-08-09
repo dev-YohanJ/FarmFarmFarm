@@ -28,12 +28,12 @@ public class CartFrontController extends HttpServlet {
 		ActionForward forward = null;
 		Action action = null;
 		
-		switch (command) {
-			case "/items.cart":
-				action = new CartAction();
-				break;
-			
-		}
+//		switch (command) {
+//			case "/login.net":
+//				action = new ItemAction();
+//				break;
+//			
+//		}
 		forward = action.execute(request, response);
 		
 		if (forward != null) {

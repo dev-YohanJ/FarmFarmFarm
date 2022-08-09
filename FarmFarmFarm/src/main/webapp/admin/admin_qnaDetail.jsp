@@ -4,7 +4,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<jsp:include page="../other/header.jsp"/><hr>
+<jsp:include page="../main/header.jsp"/><hr>
 <style>
 	select.form-control{
 		width: auto;
@@ -40,13 +40,13 @@
 <body>
 <div class="container-fluid" style="margin-top: 10px; padding:30px">
   <div class="row">
-    <div class="col-sm-1 bg-light">
+    <div class="col-sm-2 bg-light">
       <aside>
         <jsp:include page = "admin_left.jsp"/>
       </aside>
         </div>
         
-        <div class="col-sm-10" style="margin-bottom:5rem">
+        <div class="col-sm-8" style="margin-bottom:5rem">
         <h3 style="text-align:center">문의 게시판</h3>
       <section>
         <table class="table" style="border-bottom:1px solid black">
@@ -135,7 +135,7 @@
 </body>
 <script>
 	var pagefile='<%=pagefile%>';
-	var filelist = ["newitem", "bestitem", "useditem"];
+	var filelist = ["admin_notice", "admin_qna", "admin_goods"];
 	
 	for(var index=0; index<filelist.length; index++){
 		if(pagefile==filelist[index]){
@@ -146,5 +146,5 @@
 	}
 </script>
 <hr>
-<jsp:include page="../other/footer.jsp"/>
+<jsp:include page="../main/footer.jsp"/>
 </html>

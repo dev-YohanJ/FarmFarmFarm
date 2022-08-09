@@ -38,9 +38,6 @@ public class MemberFrontController extends HttpServlet {
 		Action action = null;
 		
 		switch (command) {
-			case "/main.net":	//mainpage 접속 경로
-				action = new MemberMainAction();
-				break;
 			case "/login.net":
 				action = new MemberLoginAction();
 				break;

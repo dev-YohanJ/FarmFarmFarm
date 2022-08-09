@@ -4,7 +4,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<jsp:include page="../other/header.jsp"/><hr>
+<jsp:include page="../main/header.jsp"/><hr>
 <style>
 	select.form-control{
 		width: auto;
@@ -43,13 +43,13 @@
 <body>
 <div class="container-fluid" style="margin-top: 10px; padding:30px">
   <div class="row">
-    <div class="col-sm-1 bg-light">
+    <div class="col-sm-2 bg-light">
       <aside>
         <jsp:include page = "board_left.jsp"/>
       </aside>
         </div>
         
-        <div class="col-sm-10" style="margin-bottom:5rem">
+        <div class="col-sm-8" style="margin-bottom:5rem">
         <h3 style="text-align:center">문의 게시판</h3>
       <section>
         <table class="table" style="border-bottom:1px solid black">
@@ -69,12 +69,12 @@
 		  <tbody>
 		    <tr>
 		      <td>&nbsp;&nbsp;1</td>
-		      <td><a href="board_qna2.jsp">하이하이</a></td>
+		      <td><a href="board_qnaDetail.jsp">하이하이</a></td>
 		      <td>하이하이</td>
 		      <td>2022-08-04</td>
 		      <td>
-		      	<a href="boardUpdate.bo?id=${m.id}">수정</a>/
-		      	<a href="boardDelete.bo?id=${m.id}">삭제</a>
+		      	<a href="boardUpdate.bo?id=${b.update}">수정</a>/
+		      	<a href="boardDelete.bo?id=${b.delete}">삭제</a>
 		      </td>
 		    </tr>
 		    <tr>
@@ -83,8 +83,8 @@
 		      <td>ez</td>
 		      <td>2022-08-04</td>
 		      <td>
-		      	<a href="boardUpdate.bo?id=${m.id}">수정</a>/
-		      	<a href="boardDelete.bo?id=${m.id}">삭제</a>
+		      	<a href="boardUpdate.bo?id=${b.update}">수정</a>/
+		      	<a href="boardDelete.bo?id=${b.delete}">삭제</a>
 		      </td>
 		    </tr>
 		    <tr>
@@ -93,8 +93,8 @@
 		      <td>mj</td>
 		      <td>2022-08-04</td>
 		      <td>
-		      	<a href="boardUpdate.bo?id=${m.id}">수정</a>/
-		      	<a href="boardDelete.bo?id=${m.id}">삭제</a>
+		      	<a href="boardUpdate.bo?id=${b.update}">수정</a>/
+		      	<a href="boardDelete.bo?id=${b.delete}">삭제</a>
 		      </td>
 		    </tr>
 		    <tr>
@@ -103,8 +103,8 @@
 		      <td>qeqe</td>
 		      <td>2022-08-05</td>
 		      <td>
-		      	<a href="boardUpdate.bo?id=${m.id}">수정</a>/
-		      	<a href="boardDelete.bo?id=${m.id}">삭제</a>
+		      	<a href="boardUpdate.bo?id=${b.update}">수정</a>/
+		      	<a href="boardDelete.bo?id=${b.delete}">삭제</a>
 		      </td>
 		    </tr><tr>
 		      <td>&nbsp;&nbsp;5</td>
@@ -112,13 +112,14 @@
 		      <td>asdjqr132</td>
 		      <td>2022-08-06</td>
 		      <td>
-		      	<a href="boardUpdate.bo?id=${m.id}">수정</a>/
-		      	<a href="boardDelete.bo?id=${m.id}">삭제</a>
+		      	<a href="boardUpdate.bo?id=${b.update}">수정</a>/
+		      	<a href="boardDelete.bo?id=${b.delete}">삭제</a>
 		      </td>
 		    </tr>
   		  </tbody>
  </table>
- <button type="button" class="btn btn-info float-right" onclick="location.href='board_qnaWrite.jsp'">문의하기</button>
+ 
+ <button type="button" class="btn bg-light float-right" onclick="location.href='board_qnaWrite.jsp'">문의하기</button>
     			</section>
     		</div>
     	</div>
@@ -183,7 +184,7 @@
 </body>
 <script>
 	var pagefile='<%=pagefile%>';
-	var filelist = ["newitem", "bestitem", "useditem"];
+	var filelist = ["board_notice", "board_qna"];
 	
 	for(var index=0; index<filelist.length; index++){
 		if(pagefile==filelist[index]){
@@ -194,5 +195,5 @@
 	}
 </script>
 <hr>
-<jsp:include page="../other/footer.jsp"/>
+<jsp:include page="../main/footer.jsp"/>
 </html>

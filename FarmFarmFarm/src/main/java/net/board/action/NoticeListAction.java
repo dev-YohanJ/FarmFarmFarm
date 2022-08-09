@@ -12,13 +12,16 @@ import com.google.gson.Gson;
 import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
 
-import net.admin.db.NoticeBean;
-import net.admin.db.NoticeDAO;
+import net.board.db.NoticeBean;
+import net.board.db.NoticeDAO;
+
 
 public class NoticeListAction implements Action{
 	@Override
 	public ActionForward execute(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
+		
+		request.setAttribute("pagefile", "board_notice");
 		
 		NoticeDAO noticedao = new NoticeDAO();
 		List<NoticeBean> noticelist = new ArrayList<NoticeBean>();
@@ -107,7 +110,7 @@ public class NoticeListAction implements Action{
 			forward.setRedirect(false);
 			
 			// 글 목록 페이지로 이동하기 위해 경로를 설정합니다.
-			forward.setPath("admin/noticeList.jsp");
+			forward.setPath("board/board_notice.jsp");
 			return forward; // AdminForntController.java로 리턴됩니다.
 			
 		}else {
