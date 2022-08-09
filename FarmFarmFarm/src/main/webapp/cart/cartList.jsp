@@ -41,27 +41,27 @@
     </a>
     <hr>
     <ul class="nav nav-pills flex-column mb-auto">
-      <li class="nav-item">
-        <a href="#" class="nav-link active" aria-current="page" style="background: #39A92E">
-          <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#home"/></svg>
+      <li>
+        <a href="#" class="nav-link link-dark">
+          <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#order"/></svg>
           주문내역
         </a>
       </li>
       <li>
-        <a href="#" class="nav-link link-dark">
-          <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#speedometer2"/></svg>
+        <a href="#" class="nav-link active"  aria-current="page" style="background: #39A92E">
+          <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#basket"/></svg>
           장바구니
         </a>
       </li>
       <li>
         <a href="#" class="nav-link link-dark">
-          <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#table"/></svg>
+          <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#info"/></svg>
           회원정보 수정
         </a>
       </li>
       <li>
         <a href="#" class="nav-link link-dark">
-          <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#grid"/></svg>
+          <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#search"/></svg>
           배송조회
         </a>
       </li>
@@ -83,6 +83,7 @@
                                     <th class="shoping__product">상품명</th>
                                     <th>가격</th>
                                     <th>수량</th>
+                                    <th>배송비</th>
                                     <th>총 금액</th>
                                     <th></th>
                                 </tr>
@@ -103,8 +104,11 @@
                                             </div>
                                         </div>
                                     </td>
+                                    <td class="shoping__cart__price">
+                                        3,000원
+                                    </td>
                                     <td class="shoping__cart__total">
-                                        32,900원
+                                        35,900원
                                     </td>
                                     <td class="shoping__cart__item__close">
                                          <span class="icon_close"></span>
@@ -125,8 +129,11 @@
                                             </div>
                                         </div>
                                     </td>
+                                     <td class="shoping__cart__price">
+                                        3,000원
+                                    </td>
                                     <td class="shoping__cart__total">
-                                        32,900원
+                                        35,900원
                                     </td>
                                     <td class="shoping__cart__item__close">
                                         <span class="icon_close"></span>
@@ -147,8 +154,11 @@
                                             </div>
                                         </div>
                                     </td>
+                                     <td class="shoping__cart__price">
+                                        3,000원
+                                    </td>
                                     <td class="shoping__cart__total">
-                                        32,900원
+                                        35,900원
                                     </td>
                                     <td class="shoping__cart__item__close">
                                         <span class="icon_close"></span>
