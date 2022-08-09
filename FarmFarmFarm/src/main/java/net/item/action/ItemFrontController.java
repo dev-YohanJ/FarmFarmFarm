@@ -37,12 +37,12 @@ public class ItemFrontController extends HttpServlet {
 		ActionForward forward = null;
 		Action action = null;
 		
-//		switch (command) {
-//			case "/login.net":
-//				action = new ItemAction();
-//				break;
-//			
-//		}
+		switch (command) {
+			case "/detail.tem":
+				action = new ItemDetailAction();
+				break;
+			
+		}
 		forward = action.execute(request, response);
 		
 		if (forward != null) {
