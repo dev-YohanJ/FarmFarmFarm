@@ -26,9 +26,9 @@
 	body > div > table > thead > tr:nth-child(2) > th:nth-child(4){width: 17%;}
 	body > div > table > thead > tr:nth-child(2) > th:nth-child(5){width: 11%;}
 </style>
-<script src="js/list.js"></script>
+<script src="js/admin_noticeWrite.js"></script>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>관리자 공지사항</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
@@ -114,8 +114,6 @@
 <%-- 게시글이 있는 경우 --%>
 <c:if test="${listcount > 0 }">
 
-
- 	
  <div class="center-block">
  	<ul class="pagination justify-content-center">
  		<c:if test="${page <= 1 }">
