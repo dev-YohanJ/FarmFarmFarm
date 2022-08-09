@@ -15,6 +15,7 @@ public class Item {
 	private String item_timesale;
 	private int item_season;
 	private String item_address;
+	private String item_description;
 	
 	public int getItem_id() {
 		return item_id;
@@ -99,6 +100,12 @@ public class Item {
 	}
 	public void setItem_address(String item_address) {
 		this.item_address = item_address;
+	}
+	public String getItem_description() {
+		return item_description;
+	}
+	public void setItem_description(String item_description) {
+		this.item_description = item_description;
 	}
 	
 }
