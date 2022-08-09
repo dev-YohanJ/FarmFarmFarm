@@ -40,7 +40,7 @@ function ajax(sdata) {
    $.ajax({
       type : "POST",
       data : sdata,
-      url : "BoardList.bo",
+      url : "NoticeList.mgr",
       dataType : "json",
       cache : false,
       success : function(data) {
@@ -52,31 +52,31 @@ function ajax(sdata) {
             var num = data.listcount - (data.page -1) * data.limit;
             console.log(num)
             var output = "<tbody>";
-            $(data.boardlist).each(
+            $(data.noticelist).each(
                function(index, item) {
                   output += '<tr><td>' + (num--) + "</td>"
-                  blank_count = item.board_re_lev * 2 + 1;
+                  blank_count = item.notice_re_lev * 2 + 1;
                   blank = '&nbsp;';
                   for (var i = 0; i < blank_count; i++) {
                      blank += '&nbsp;&nbsp;';
                   }
                   img="";
-                  if (item.board_re_lev > 0) {
+                  if (item.notice_re_lev > 0) {
                      img="<img src='img/line.gif'>";
                   }
                   
-                  var subject=item.board_subject;
+                  var subject=item.notice_subject;
                   if(subject.length>=20){
                      subject=subject.substr(0,20) + "...";//0부터 20개 부분 문자열 추출
                   }
                   
                   output += "<td><div>" + blank + img
-                  output += '<a href="BoardDetailAction.bo?num=' + item.board_num + '">'
+                  output += '<a href="NoticeDetailAction.mgr?num=' + item.notice_num + '">'
                   output += subject.replace(/</g, '&lt;').replace(/>/g, '&gt;')
                           + '</a>[' + item.cnt + ']</div></td>'
-                  output +=  '<td><div>' + item.board_name+'</div></td>'
-                  output +=  '<td><div>' + item.board_date+'</div></td>'
-                  output +=  '<td><div>' + item.board_readcount
+                  output +=  '<td><div>' + item.notice_name+'</div></td>'
+                  output +=  '<td><div>' + item.notice_date+'</div></td>'
+                  output +=  '<td><div>' + item.notice_readcount
                         + '</div></td></tr>'
                })
          output += "</tbody>"
@@ -96,7 +96,7 @@ function ajax(sdata) {
 
 $(function() {
    $("button").click(function(){
-      location.href="BoardWrite.bo";
+      location.href="NoticeWrite.mgr";
    })
    
    $("#viewcount").change(function() {

@@ -105,8 +105,7 @@
    </c:forEach>
   		  </tbody>
  </table>
- <button type="button" class="btn bg-light float-right" 
- 		 onclick="location.href='admin_noticeWrite.jsp'">등록하기</button>
+ <button type="button" class="btn bg-light float-right" >등록하기</button>
     			</section>
     		</div>
     	</div>
