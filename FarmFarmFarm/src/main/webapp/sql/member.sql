@@ -3,7 +3,7 @@ drop table member cascade constraints purge;
 --2. 관리자 계정 admin, 비번 1234를 만듭니다.
 --3. 사용자 계정을 3개 만듭니다.
 
-create table MEMBER(
+create table MEM(
 	MEM_ID			varchar2(20),
 	MEM_PASS		varchar2(20),
 	MEM_NAME		varchar2(10),

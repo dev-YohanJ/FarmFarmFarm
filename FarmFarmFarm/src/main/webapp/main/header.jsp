@@ -51,7 +51,7 @@ li>.nav-link {color: black}
       <div class="collapse navbar-collapse justify-content-md-center" id="navbarsExample08">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">신상품</a>
+            <a class="nav-link active" aria-current="page" href="list.tem">신상품</a>
           </li>
           <li class="nav-item">
             <a class="nav-link active" aria-current="page" href="#">베스트 100</a>

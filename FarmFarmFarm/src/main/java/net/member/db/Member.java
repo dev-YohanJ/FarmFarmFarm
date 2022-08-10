@@ -1,68 +1,75 @@
-package net.member.db;
 
 public class Member {
-	private String mem_id;
-	private String mem_pass;
-	private String mem_name;
-	private int mem_phone;
-	private String mem_email;
-	private String mem_address;
-	private String mem_address2;
-	private String mem_address3;
-	private int mem_verify;
+	String MEM_ID;
+	String MEM_PASS;
+	String MEM_NAME;
+	int MEM_JUMIN;
+	int MEM_PHONE;
+	String MEM_EMAIL;
+	String MEM_ADDRESS;
+	String MEM_ADDRESS2;
+	String MEM_ADDRESS3;
+	int MEM_VERIFY;
 	
-	public String getMem_id() {
-		return mem_id;
+	public String getMEM_ID() {
+		return MEM_ID;
 	}
-	public void setMem_id(String mem_id) {
-		this.mem_id = mem_id;
+	public void setMEM_ID(String mEM_ID) {
+		MEM_ID = mEM_ID;
 	}
-	public String getMem_pass() {
-		return mem_pass;
+	public String getMEM_PASS() {
+		return MEM_PASS;
 	}
-	public void setMem_pass(String mem_pass) {
-		this.mem_pass = mem_pass;
+	public void setMEM_PASS(String mEM_PASS) {
+		MEM_PASS = mEM_PASS;
 	}
-	public String getMem_name() {
-		return mem_name;
+	public String getMEM_NAME() {
+		return MEM_NAME;
 	}
-	public void setMem_name(String mem_name) {
-		this.mem_name = mem_name;
+	public void setMEM_NAME(String mEM_NAME) {
+		MEM_NAME = mEM_NAME;
 	}
-	public int getMem_phone() {
-		return mem_phone;
+	public int getMEM_JUMIN() {
+		return MEM_JUMIN;
 	}
-	public void setMem_phone(int mem_phone) {
-		this.mem_phone = mem_phone;
+	public void setMEM_JUMIN(int mEM_JUMIN) {
+		MEM_JUMIN = mEM_JUMIN;
 	}
-	public String getMem_email() {
-		return mem_email;
+	public int getMEM_PHONE() {
+		return MEM_PHONE;
 	}
-	public void setMem_email(String mem_email) {
-		this.mem_email = mem_email;
+	public void setMEM_PHONE(int mEM_PHONE) {
+		MEM_PHONE = mEM_PHONE;
 	}
-	public String getMem_address() {
-		return mem_address;
+	public String getMEM_EMAIL() {
+		return MEM_EMAIL;
 	}
-	public void setMem_address(String mem_address) {
-		this.mem_address = mem_address;
+	public void setMEM_EMAIL(String mEM_EMAIL) {
+		MEM_EMAIL = mEM_EMAIL;
 	}
-	public String getMem_address2() {
-		return mem_address2;
+	public String getMEM_ADDRESS() {
+		return MEM_ADDRESS;
 	}
-	public void setMem_address2(String mem_address2) {
-		this.mem_address2 = mem_address2;
+	public void setMEM_ADDRESS(String mEM_ADDRESS) {
+		MEM_ADDRESS = mEM_ADDRESS;
 	}
-	public String getMem_address3() {
-		return mem_address3;
+	public String getMEM_ADDRESS2() {
+		return MEM_ADDRESS2;
 	}
-	public void setMem_address3(String mem_address3) {
-		this.mem_address3 = mem_address3;
+	public void setMEM_ADDRESS2(String mEM_ADDRESS2) {
+		MEM_ADDRESS2 = mEM_ADDRESS2;
 	}
-	public int getMem_verify() {
-		return mem_verify;
+	public String getMEM_ADDRESS3() {
+		return MEM_ADDRESS3;
 	}
-	public void setMem_verify(int mem_verify) {
-		this.mem_verify = mem_verify;
+	public void setMEM_ADDRESS3(String mEM_ADDRESS3) {
+		MEM_ADDRESS3 = mEM_ADDRESS3;
 	}
+	public int getMEM_VERIFY() {
+		return MEM_VERIFY;
+	}
+	public void setMEM_VERIFY(int mEM_VERIFY) {
+		MEM_VERIFY = mEM_VERIFY;
+	}
+	
 }
