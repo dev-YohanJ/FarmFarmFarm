@@ -84,7 +84,7 @@ public class QnaModifyAction implements Action{
              
              forward.setRedirect(true);
              // 수정한 글 내용을 보여주기 위해 글 내용 보기 페이지로 이동하기위해 경로를 설정합니다.
-             forward.setPath("qnaDetailAction.bo?num=" + qnadata.getQna_num());
+             forward.setPath("QnaDetailAction.bo?num=" + qnadata.getQna_num());
              return forward;
 		} catch (IOException e) {
 			e.printStackTrace();

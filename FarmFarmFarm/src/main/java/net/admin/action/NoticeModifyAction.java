@@ -75,7 +75,7 @@ public class NoticeModifyAction implements Action{
              if (result == false) {
             	 System.out.println("공지사항 게시물 수정 실패");
             	 forward.setRedirect(false);
-            	 request.setAttribute("message", "공시사항 게시판 수정이 되지 않았습니다.");
+            	 request.setAttribute("message", "공지사항 게시판 수정이 되지 않았습니다.");
             	 forward.setPath("error/error.jsp");
             	 return forward;
              }
@@ -84,7 +84,7 @@ public class NoticeModifyAction implements Action{
              
              forward.setRedirect(true);
              // 수정한 글 내용을 보여주기 위해 글 내용 보기 페이지로 이동하기위해 경로를 설정합니다.
-             forward.setPath("NoticeDetailAction.ad?num=" + noticedata.getNotice_num());
+             forward.setPath("NoticeDetailAction.mgr?num=" + noticedata.getNotice_num());
              return forward;
 		} catch (IOException e) {
 			e.printStackTrace();

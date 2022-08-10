@@ -38,7 +38,7 @@ public class QnaModifyView implements Action {
       request.setAttribute("qnadata", qnadata);
       forward.setRedirect(false);
       //글 수정 폼 페이지로 이동하기 위해 경로를 설정합니다.
-      forward.setPath("admin/qnaModify.jsp");
+      forward.setPath("board/board_qnaModify.jsp");
       return forward;
    }
 

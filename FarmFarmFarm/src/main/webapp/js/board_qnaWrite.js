@@ -40,7 +40,7 @@ function ajax(sdata) {
    $.ajax({
       type : "POST",
       data : sdata,
-      url : "NoticeList.mgr",
+      url : "QnaList.bo",
       dataType : "json",
       cache : false,
       success : function(data) {
@@ -52,31 +52,31 @@ function ajax(sdata) {
             var num = data.listcount - (data.page -1) * data.limit;
             console.log(num)
             var output = "<tbody>";
-            $(data.noticelist).each(
+            $(data.qnalist).each(
                function(index, item) {
                   output += '<tr><td>' + (num--) + "</td>"
-                  blank_count = item.notice_re_lev * 2 + 1;
+                  blank_count = item.qna_re_lev * 2 + 1;
                   blank = '&nbsp;';
                   for (var i = 0; i < blank_count; i++) {
                      blank += '&nbsp;&nbsp;';
                   }
                   img="";
-                  if (item.notice_re_lev > 0) {
+                  if (item.qna_re_lev > 0) {
                      img="<img src='img/line.gif'>";
                   }
                   
-                  var subject=item.notice_subject;
+                  var subject=item.qna_subject;
                   if(subject.length>=20){
                      subject=subject.substr(0,20) + "...";//0부터 20개 부분 문자열 추출
                   }
                   
                   output += "<td><div>" + blank + img
-                  output += '<a href="NoticeDetailAction.mgr?num=' + item.notice_num + '">'
+                  output += '<a href="QnaDetailAction.bo?num=' + item.qna_num + '">'
                   output += subject.replace(/</g, '&lt;').replace(/>/g, '&gt;')
                           + '</a>[' + item.cnt + ']</div></td>'
-                  output +=  '<td><div>' + item.notice_name+'</div></td>'
-                  output +=  '<td><div>' + item.notice_date+'</div></td>'
-                  output +=  '<td><div>' + item.notice_readcount
+                  output +=  '<td><div>' + item.qna_name+'</div></td>'
+                  output +=  '<td><div>' + item.qna_date+'</div></td>'
+                  output +=  '<td><div>' + item.qna_readcount
                         + '</div></td></tr>'
                })
          output += "</tbody>"
@@ -96,7 +96,7 @@ function ajax(sdata) {
 
 $(function() {
    $("section button").click(function(){
-      location.href="NoticeWrite.mgr";
+      location.href="QnaWrite.bo";
    })
    
    $("#viewcount").change(function() {
