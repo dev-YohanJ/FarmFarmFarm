@@ -40,7 +40,7 @@ public class QnaDetailAction  implements Action {
 		
 		ActionForward forward = new ActionForward();
 		forward.setRedirect(false);
-		forward.setPath("admin/qnaView.jsp"); //글 내용 보기 페이지로 이동하기 위해 경로를 설정합니다.
+		forward.setPath("admin/admin_qna.jsp"); //글 내용 보기 페이지로 이동하기 위해 경로를 설정합니다.
 		return forward;
 	}
 }

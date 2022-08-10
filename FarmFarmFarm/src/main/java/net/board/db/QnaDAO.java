@@ -135,7 +135,7 @@ public class QnaDAO {
                 + "  from  (select rownum rnum, j.* "
                 + "         from (select qna.*,  nvl(cnt,0) cnt "
 	            + "               from qna left outer join (select comment_qna_num,count(*) cnt"
-                + "                                           from comm"
+                + "                                           from comm_qna"
                 + "                                           group by comment_qna_num)"
                 + "               on qna_num=comment_qna_num"
 	            + "               order by QNA_RE_REF desc,"

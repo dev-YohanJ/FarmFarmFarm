@@ -11,12 +11,22 @@ public class Item {
 	private String item_type;
 	private int item_likebtn;
 	private String item_regdate;
-	private String item_file;
+	private String item_file1;
+	private String item_file2;
+	private String item_file3;
+	private String item_file4;
 	private String item_timesale;
 	private int item_season;
 	private String item_address;
 	private String item_description;
+	private int item_sale;
 	
+	public int getItem_sale() {
+		return item_sale;
+	}
+	public void setItem_sale(int item_sale) {
+		this.item_sale = item_sale;
+	}
 	public int getItem_id() {
 		return item_id;
 	}
@@ -77,11 +87,29 @@ public class Item {
 	public void setItem_regdate(String item_regdate) {
 		this.item_regdate = item_regdate;
 	}
-	public String getItem_file() {
-		return item_file;
+	public String getItem_file1() {
+		return item_file1;
 	}
-	public void setItem_file(String item_file) {
-		this.item_file = item_file;
+	public void setItem_file1(String item_file1) {
+		this.item_file1 = item_file1;
+	}
+	public String getItem_file2() {
+		return item_file2;
+	}
+	public void setItem_file2(String item_file2) {
+		this.item_file2 = item_file2;
+	}
+	public String getItem_file3() {
+		return item_file3;
+	}
+	public void setItem_file3(String item_file3) {
+		this.item_file3 = item_file3;
+	}
+	public String getItem_file4() {
+		return item_file4;
+	}
+	public void setItem_file4(String item_file4) {
+		this.item_file4 = item_file4;
 	}
 	public String getItem_timesale() {
 		return item_timesale;

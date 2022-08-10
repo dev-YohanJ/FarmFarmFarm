@@ -11,7 +11,7 @@ public class NoticeWriteAction implements Action{
 			throws ServletException, IOException{
 		ActionForward forward = new ActionForward();
 		forward.setRedirect(false); // 포워딩 방식으로 주소가 바뀌지 않아요
-		forward.setPath("admin/noticeWrite.jsp");
+		forward.setPath("admin/admin_noticeWrite.jsp");
 		return forward;
 	}
 }//class end

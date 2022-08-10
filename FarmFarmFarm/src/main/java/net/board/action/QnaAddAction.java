@@ -68,7 +68,7 @@ public class QnaAddAction implements Action {
 	         //글 등록이 완료되면 글 목록을 보여주기 위해 "QnaList.net"로 이동합니다.
 	         //Redirect여부를 true로 설정합니다.
 	         forward.setRedirect(true);
-	         forward.setPath("QnaList.net");//이동할 경로를 지정합니다.
+	         forward.setPath("QnaList.bo");//이동할 경로를 지정합니다.
 	         return forward;
 		}catch(IOException ex) {
 			ex.printStackTrace();

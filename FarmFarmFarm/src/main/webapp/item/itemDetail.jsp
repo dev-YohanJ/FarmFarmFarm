@@ -27,13 +27,13 @@
 				<div class="product__details__pic">
 					<div class="product__details__pic__item">
 						<img class="product__details__pic__item--large" 
-							src="image/fruits/grape.jpg" alt="">
+							src=${iteminfo.item_file1} alt="">
 					</div>
 					<div class="product__details__pic__slider owl-carousel"><!-- 사진 들어가는 곳 -->
-						<img data-imgbigurl="image/fruits/grape.jpg" src="image/fruits/grape.jpg" alt="">
-						<img data-imgbigurl="image/fruits/grape2.jpg" src="image/fruits/grape2.jpg" alt="">
-						<img data-imgbigurl="image/fruits/grape3.jpg" src="image/fruits/grape3.jpg" alt="">
-						<img data-imgbigurl="image/fruits/grape4.jpg" src="image/fruits/grape4.jpg" alt="">
+						<img data-imgbigurl=${iteminfo.item_file1} src=${iteminfo.item_file1} alt="">
+						<img data-imgbigurl=${iteminfo.item_file2} src=${iteminfo.item_file2} alt="">
+						<img data-imgbigurl=${iteminfo.item_file3} src=${iteminfo.item_file3} alt="">
+						<img data-imgbigurl=${iteminfo.item_file4} src=${iteminfo.item_file4} alt="">
 					</div>
 				</div>
 			</div>
@@ -61,7 +61,7 @@
 					<ul>
 						<li>
 							<b>재고 수량 : </b>
-							<span>주문 가능</span>
+							<span>${iteminfo.item_stock}</span>
 						</li>
 						<li>
 							<b>배송일</b>
