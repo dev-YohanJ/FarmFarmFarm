@@ -41,6 +41,10 @@ public class ItemFrontController extends HttpServlet {
 			case "/detail.tem":
 				action = new ItemDetailAction();
 				break;
+				
+			case "/list.tem":
+				action = new ItemListAction();
+				break;
 			
 		}
 		forward = action.execute(request, response);

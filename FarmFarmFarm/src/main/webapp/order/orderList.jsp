@@ -120,9 +120,13 @@
 							</div><br>
 						</div>
 					</div>	
-					<div class="d-grid gap-2">
-  						<button class="btn btn-primary" type="button">주문하기</button>
-  						<button class="btn btn-danger" type="button">취소하기</button>
+					<div class="row">
+						<div class="col-6">
+ 							<button class="btn btn-primary" type="button" style="width: 100%">주문하기</button>
+ 						</div>
+ 						<div class="col-6">	
+ 							<button class="btn btn-danger" type="button" style="width: 100%">취소하기</button>
+ 						</div>
 					</div>
 				</form>
 			</div>

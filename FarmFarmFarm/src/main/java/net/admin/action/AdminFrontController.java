@@ -43,7 +43,7 @@ public class AdminFrontController extends javax.servlet.http.HttpServlet {
 		
 		switch (command) {
 			case "/NoticeList.mgr":
-				action = new NoticeListAction();
+				action = new  NoticeListAction();
 				break;
 			case "/NoticeWrite.mgr":
 				action = new NoticeWriteAction();

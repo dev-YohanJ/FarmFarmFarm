@@ -6,7 +6,6 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
-<script src="js/jquery-3.6.0.js"></script>
 <style>
 #navbarsExample08 li {
 	margin: 0px 50px 0px 20px;
@@ -52,7 +51,7 @@ li>.nav-link {color: black}
       <div class="collapse navbar-collapse justify-content-md-center" id="navbarsExample08">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">신상품</a>
+            <a class="nav-link active" aria-current="page" href="list.tem">신상품</a>
           </li>
           <li class="nav-item">
             <a class="nav-link active" aria-current="page" href="#">베스트 100</a>

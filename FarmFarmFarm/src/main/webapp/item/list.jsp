@@ -1,9 +1,9 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>listpage</title>
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
@@ -49,9 +49,10 @@
 
 <!-- main contents -->
 <main class=container>
+ 
 <!-- main banner -->
  <div class="banner">
- 	<img src="../image/ad/farmer.jpg" class="img-fluid bn" alt="banner">
+ 	<img src="image/ad/farmer.jpg" class="img-fluid bn" alt="banner">
  </div>
 
 
@@ -59,10 +60,10 @@
   <div class="album">
     <div class="container">
     
-    	<!-- sub_nav -->
+    	<!-- sub_nav --> 
     	<div class="sort">
     		<div class="sort-totall">
-    			<span>전체 상품 00건</span>
+    			<span>전체 상품 : ${listcount} 건</span>
     		</div>
     		<div class="sort-detail">
     			<ul>
@@ -86,7 +87,7 @@
 	            	<%-- <text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text> --%>
 	            </svg>
 	          </a>
-           
+	          
             <div class="card-body">
               <h5 class="card-title link"><a href="#">새콤달콤한 가평 포도 2kg</a></h5>
               <div class="price">
